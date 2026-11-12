@@ -1,0 +1,11 @@
+{
+  "ios": {
+    "min": "1.0.0",
+    "recommended": "1.0.0"
+  },
+  "android": {
+    "min": "1.0.0",
+    "recommended": "1.0.0",
+    "storeUrl": "https://play.google.com/store/apps/details?id=com.falamos.app"
+  }
+}

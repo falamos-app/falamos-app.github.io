@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="uk">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,15 +17,18 @@
   li { margin-bottom: 6px; }
   a { color: inherit; }
   .date { color: var(--muted); margin-bottom: 20px; }
-  nav { margin-bottom: 24px; }
-  nav a { display: inline-block; padding: 4px 12px; border: 2px solid var(--line); border-radius: 999px; text-decoration: none; font-weight: 600; margin-right: 6px; }
-  nav a:hover { background: var(--accent); color: #24272b; }
+  /* One language at a time; without JavaScript both stay, one under the other. */
+  nav { display: inline-flex; border: 2px solid var(--line); border-radius: 999px; padding: 3px; margin-bottom: 24px; gap: 2px; }
+  nav a { padding: 4px 14px; border-radius: 999px; text-decoration: none; font-weight: 600; }
+  nav a[aria-current="true"] { background: var(--accent); color: #24272b; }
   section + section { margin-top: 64px; padding-top: 32px; border-top: 2px solid var(--line); }
+  .one section + section { margin-top: 0; padding-top: 0; border-top: 0; }
+  .one section[hidden] { display: none; }
 </style>
 </head>
 <body>
 <main>
-<nav><a href="#uk">Українська</a><a href="#en">English</a></nav>
+<nav aria-label="Language"><a href="#en" data-lang="en">English</a><a href="#uk" data-lang="uk">Українська</a></nav>
 
 <section id="uk" lang="uk">
 <h1>Політика приватності Falamos</h1>
@@ -59,6 +62,8 @@
   <li><b>Скарга «Тут помилка»:</b> яка вправа й яка була твоя відповідь.</li>
   <li><b>Статистика вправ:</b> скільки разів вправу зробили правильно чи неправильно. Це лише загальні лічильники, без прив'язки до людини.</li>
   <li><b>Покупки:</b> чи активний Falamos Pro і до якої дати. Оплату проводить Apple або Google, даних картки ми не бачимо.</li>
+  <li><b>Технічні журнали.</b> Як і будь-який сайт, сервер на кілька днів записує IP-адресу й час запиту — щоб знаходити збої й
+    зловживання.</li>
 </ul>
 
 <h2>Кому передаються дані</h2>
@@ -66,7 +71,7 @@
   <li><b>Supabase</b> — база даних і сервер (Ірландія, ЄС).</li>
   <li><b>OpenAI</b> — пояснення тексту; <b>Google (Gemini)</b> — запасний варіант для пояснень і озвучка окремих слів для
     карток (без прив'язки до тебе). Провайдери можуть тимчасово зберігати запити за своїми правилами, наприклад для
-    виявлення зловживань.</li>
+    виявлення зловживань, але за умовами їхніх платних API не використовують ці дані для навчання моделей.</li>
   <li><b>RevenueCat</b> — облік покупок за анонімним ідентифікатором.</li>
   <li><b>Apple і Google</b> — вхід, оплата, а також розпізнавання мовлення, коли воно працює не на пристрої.</li>
   <li><b>GitHub</b> — застосунок читає звідти файл про оновлення й оголошення; як будь-який сайт, GitHub бачить IP-адресу запиту.</li>
@@ -82,8 +87,9 @@
 
 <h2>Скільки зберігаємо й твої права</h2>
 <p>Дані на сервері зберігаються, поки існує акаунт. У застосунку є «Видалити акаунт і прогрес» у профілі: це одразу видаляє
-користувача й усі його рядки в нашій базі. Дані на телефоні зникають разом із застосунком; записи про покупки Apple, Google
-і RevenueCat можуть зберігати довше, як того вимагає закон.</p>
+користувача й усі його рядки в нашій базі. Без входу такої кнопки немає, але й на сервері тоді немає нічого, за чим
+тебе можна впізнати: лише анонімний ідентифікатор, лічильники фото й скарги «Тут помилка». Дані на телефоні зникають разом із застосунком; записи про покупки Apple,
+Google і RevenueCat можуть зберігати довше, як того вимагає закон.</p>
 <p>Ти можеш отримати копію своїх даних, виправити чи видалити їх, обмежити обробку або заперечити проти неї — напиши нам.
 Також можна поскаржитися до органу із захисту даних своєї країни.</p>
 
@@ -126,6 +132,8 @@ without. There are no ads or advertising trackers, and we do not sell data.</p>
   <li><b>A «Report a mistake» report:</b> which exercise, and what you answered.</li>
   <li><b>Exercise statistics:</b> how many times an exercise was answered right or wrong. These are overall counts, not linked to any person.</li>
   <li><b>Purchases:</b> whether Falamos Pro is active and until when. Apple or Google handles payment; we never see card details.</li>
+  <li><b>Technical logs.</b> Like any website, the server keeps the IP address and time of a request for a few days, to find
+    errors and abuse.</li>
 </ul>
 
 <h2>Who receives data</h2>
@@ -133,7 +141,7 @@ without. There are no ads or advertising trackers, and we do not sell data.</p>
   <li><b>Supabase</b> — database and server (Ireland, EU).</li>
   <li><b>OpenAI</b> — explaining text; <b>Google (Gemini)</b> — the fallback for explanations, and voicing single words for
     cards (not linked to you). Providers may keep requests for a limited time under their own terms, for example to detect
-    abuse.</li>
+    abuse, but under the terms of their paid APIs they do not use this data to train their models.</li>
   <li><b>RevenueCat</b> — keeps track of purchases under the anonymous identifier.</li>
   <li><b>Apple and Google</b> — sign-in, payment, and speech recognition when it does not run on the device.</li>
   <li><b>GitHub</b> — the app reads a file about updates and announcements from it; like any website, GitHub sees the IP address of the request.</li>
@@ -149,8 +157,9 @@ mechanisms provided by the GDPR.</p>
 
 <h2>How long we keep data, and your rights</h2>
 <p>Data on the server is kept for as long as the account exists. «Delete account and progress» in the app's profile immediately
-deletes the user and all their rows in our database. Data on the phone goes with the app; Apple, Google and RevenueCat may keep
-purchase records for longer, as the law requires.</p>
+deletes the user and all their rows in our database. Without signing in there is no such button, but then the server holds nothing
+that identifies you: only an anonymous identifier, photo counts and «Report a mistake» reports. Data on the phone goes with the app; Apple,
+Google and RevenueCat may keep purchase records for longer, as the law requires.</p>
 <p>You can get a copy of your data, correct or delete it, restrict its processing or object to it: just write to us. You can also
 complain to the data protection authority in your country.</p>
 
@@ -161,5 +170,26 @@ complain to the data protection authority in your country.</p>
 <p>If this policy changes, the date at the top will change, and we will tell you about important changes in the app.</p>
 </section>
 </main>
+<script>
+  // English unless the address asks for Ukrainian (…/privacy/#uk); the switch keeps the choice in the address.
+  (function () {
+    var main = document.querySelector('main');
+    main.classList.add('one');
+    function show(lang) {
+      document.querySelectorAll('main > section').forEach(function (s) { s.hidden = s.id !== lang; });
+      document.querySelectorAll('nav a').forEach(function (a) { a.setAttribute('aria-current', String(a.dataset.lang === lang)); });
+      document.documentElement.lang = lang;
+    }
+    document.querySelectorAll('nav a').forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        e.preventDefault();
+        show(a.dataset.lang);
+        history.replaceState(null, '', '#' + a.dataset.lang);
+        window.scrollTo(0, 0);
+      });
+    });
+    show(location.hash === '#uk' ? 'uk' : 'en');
+  })();
+</script>
 </body>
 </html>

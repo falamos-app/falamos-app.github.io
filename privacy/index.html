@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Falamos — Privacy</title>
+<style>
+  :root { --bg: #fff; --ink: #24272b; --muted: #5d636b; --accent: #ffd60a; --line: #24272b; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #17191c; --ink: #f4f4f2; --muted: #b0b4ba; --line: #f4f4f2; } }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 680px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 30px; line-height: 1.2; margin: 0 0 4px; }
+  h2 { font-size: 20px; margin: 32px 0 8px; }
+  p, ul { margin: 0 0 12px; }
+  ul { padding-left: 20px; }
+  li { margin-bottom: 6px; }
+  a { color: inherit; }
+  .date { color: var(--muted); margin-bottom: 20px; }
+  nav { margin-bottom: 24px; }
+  nav a { display: inline-block; padding: 4px 12px; border: 2px solid var(--line); border-radius: 999px; text-decoration: none; font-weight: 600; margin-right: 6px; }
+  nav a:hover { background: var(--accent); color: #24272b; }
+  section + section { margin-top: 64px; padding-top: 32px; border-top: 2px solid var(--line); }
+</style>
+</head>
+<body>
+<main>
+<nav><a href="#uk">Українська</a><a href="#en">English</a></nav>
+
+<section id="uk" lang="uk">
+<h1>Політика приватності Falamos</h1>
+<p class="date">Оновлено 14 листопада 2026</p>
+<p>Falamos — застосунок для вивчення європейської португальської. Він працює без реєстрації й збирає лише те, без чого
+не обійтися. Реклами й рекламних трекерів немає, дані ми не продаємо.</p>
+
+<h2>Хто відповідає за дані</h2>
+<p>Ярослав Андрійчук. Пиши на <a href="mailto:tomiqwww@gmail.com">tomiqwww@gmail.com</a>.</p>
+
+<h2>Що залишається на телефоні</h2>
+<ul>
+  <li><b>Фото.</b> Текст розпізнається на самому телефоні, сам знімок нікуди не надсилається.</li>
+  <li><b>Записи твого голосу</b> у вправах на вимову. Ми їх не отримуємо. Мовлення розпізнає система телефона: на самому
+    пристрої, а якщо там немає потрібної мови — сервісами Apple чи Google за їхніми правилами.</li>
+  <li><b>Прогрес і колода</b>, поки ти не ввійшов в акаунт. Нагадування теж плануються на телефоні.</li>
+</ul>
+
+<h2>Що надсилається на сервер</h2>
+<ul>
+  <li><b>Анонімний ідентифікатор.</b> Створюється автоматично під час першого запуску, щоб працювали ліміти й покупки.</li>
+  <li><b>На Android — хеш ідентифікатора пристрою</b> (ANDROID_ID, лише як хеш SHA-256, сам ідентифікатор не
+    надсилається), коли ти просиш пояснити фото. Він потрібен лише для того, щоб безкоштовні фото рахувались на телефон і не
+    поновлювались після перевстановлення застосунку. На сервері лишається тільки лічильник фото за тиждень.</li>
+  <li><b>Текст, розпізнаний на фото,</b> коли ти просиш його пояснити, і мова пояснень. Текст передається AI-провайдеру,
+    відповідь повертається тобі, а на нашому сервері текст не зберігається: лише лічильник використаних фото й довжина
+    тексту в журналі. Лист може містити ім'я, адресу чи NIF, тож не надсилай те, чим не хочеш ділитися.</li>
+  <li><b>Акаунт</b>, якщо ти входиш через Apple чи Google: адреса пошти й ідентифікатор від цього сервісу.</li>
+  <li><b>Прогрес</b>, якщо ти ввійшов: відповіді, пройдені уроки, слова з особистої колоди й налаштування (наприклад, форма
+    звертання чи мова пояснень). Це потрібно, щоб він не загубився на новому телефоні.</li>
+  <li><b>Скарга «Тут помилка»:</b> яка вправа й яка була твоя відповідь.</li>
+  <li><b>Статистика вправ:</b> скільки разів вправу зробили правильно чи неправильно. Це лише загальні лічильники, без прив'язки до людини.</li>
+  <li><b>Покупки:</b> чи активний Falamos Pro і до якої дати. Оплату проводить Apple або Google, даних картки ми не бачимо.</li>
+</ul>
+
+<h2>Кому передаються дані</h2>
+<ul>
+  <li><b>Supabase</b> — база даних і сервер (Ірландія, ЄС).</li>
+  <li><b>OpenAI</b> — пояснення тексту; <b>Google (Gemini)</b> — запасний варіант для пояснень і озвучка окремих слів для
+    карток (без прив'язки до тебе). Провайдери можуть тимчасово зберігати запити за своїми правилами, наприклад для
+    виявлення зловживань.</li>
+  <li><b>RevenueCat</b> — облік покупок за анонімним ідентифікатором.</li>
+  <li><b>Apple і Google</b> — вхід, оплата, а також розпізнавання мовлення, коли воно працює не на пристрої.</li>
+  <li><b>GitHub</b> — застосунок читає звідти файл про оновлення й оголошення; як будь-який сайт, GitHub бачить IP-адресу запиту.</li>
+</ul>
+<p>Частина цих компаній обробляє дані поза ЄС, зокрема в США, на підставі стандартних договірних умов або інших
+механізмів, передбачених GDPR.</p>
+
+<h2>Навіщо й на якій підставі</h2>
+<ul>
+  <li>Щоб застосунок працював: пояснення, синхронізація, покупки (виконання договору з тобою).</li>
+  <li>Щоб запобігти зловживанням і виправляти помилки в уроках: ліміти, скарги (законний інтерес).</li>
+</ul>
+
+<h2>Скільки зберігаємо й твої права</h2>
+<p>Дані на сервері зберігаються, поки існує акаунт. У застосунку є «Видалити акаунт і прогрес» у профілі: це одразу видаляє
+користувача й усі його рядки в нашій базі. Дані на телефоні зникають разом із застосунком; записи про покупки Apple, Google
+і RevenueCat можуть зберігати довше, як того вимагає закон.</p>
+<p>Ти можеш отримати копію своїх даних, виправити чи видалити їх, обмежити обробку або заперечити проти неї — напиши нам.
+Також можна поскаржитися до органу із захисту даних своєї країни.</p>
+
+<h2>Діти</h2>
+<p>Falamos не призначений для дітей до 16 років, і ми свідомо не збираємо їхніх даних. Якщо такі дані потрапили до нас, напиши, і ми їх видалимо.</p>
+
+<h2>Зміни</h2>
+<p>Якщо ця політика зміниться, дата вгорі оновиться, а про важливі зміни повідомимо в застосунку.</p>
+</section>
+
+<section id="en" lang="en">
+<h1>Falamos Privacy Policy</h1>
+<p class="date">Updated 14 November 2026</p>
+<p>Falamos is an app for learning European Portuguese. It works without registration and collects only what it cannot do
+without. There are no ads or advertising trackers, and we do not sell data.</p>
+
+<h2>Who is responsible for your data</h2>
+<p>Yaroslav Andriichuk. Write to <a href="mailto:tomiqwww@gmail.com">tomiqwww@gmail.com</a>.</p>
+
+<h2>What stays on your phone</h2>
+<ul>
+  <li><b>Photos.</b> Text is recognised on the phone itself, and the picture is never sent anywhere.</li>
+  <li><b>Recordings of your voice</b> in pronunciation exercises. We do not receive them. Speech is recognised by the phone's
+    system: on the device, or, if the language is not available there, by Apple or Google services under their terms.</li>
+  <li><b>Progress and your deck</b>, until you sign in. Reminders are also scheduled on the phone.</li>
+</ul>
+
+<h2>What is sent to the server</h2>
+<ul>
+  <li><b>An anonymous identifier.</b> Created automatically on first launch so that limits and purchases work.</li>
+  <li><b>On Android, a hash of the device identifier</b> (ANDROID_ID, only as a SHA-256 hash; the identifier itself is never
+    sent), when you ask for a photo to be explained. It is used only so that free photos are counted per phone and do not
+    come back when the app is reinstalled. The server keeps nothing but a weekly count of photos.</li>
+  <li><b>Text recognised in a photo,</b> when you ask for it to be explained, and the explanation language. The text goes to an
+    AI provider and the answer comes back to you. Our server does not store the text: only a count of photos used, and the
+    text's length in a log. A letter may contain a name, an address or a NIF, so do not send what you would rather not share.</li>
+  <li><b>Your account</b>, if you sign in with Apple or Google: your email address and that service's identifier.</li>
+  <li><b>Progress</b>, if you are signed in: answers, finished lessons, words in your personal deck and settings (such as
+    your form of address or explanation language), so it is not lost when you change phones.</li>
+  <li><b>A «Report a mistake» report:</b> which exercise, and what you answered.</li>
+  <li><b>Exercise statistics:</b> how many times an exercise was answered right or wrong. These are overall counts, not linked to any person.</li>
+  <li><b>Purchases:</b> whether Falamos Pro is active and until when. Apple or Google handles payment; we never see card details.</li>
+</ul>
+
+<h2>Who receives data</h2>
+<ul>
+  <li><b>Supabase</b> — database and server (Ireland, EU).</li>
+  <li><b>OpenAI</b> — explaining text; <b>Google (Gemini)</b> — the fallback for explanations, and voicing single words for
+    cards (not linked to you). Providers may keep requests for a limited time under their own terms, for example to detect
+    abuse.</li>
+  <li><b>RevenueCat</b> — keeps track of purchases under the anonymous identifier.</li>
+  <li><b>Apple and Google</b> — sign-in, payment, and speech recognition when it does not run on the device.</li>
+  <li><b>GitHub</b> — the app reads a file about updates and announcements from it; like any website, GitHub sees the IP address of the request.</li>
+</ul>
+<p>Some of these companies process data outside the EU, including in the US, under standard contractual clauses or other
+mechanisms provided by the GDPR.</p>
+
+<h2>Why, and on what legal basis</h2>
+<ul>
+  <li>To make the app work: explanations, sync, purchases (performing our contract with you).</li>
+  <li>To prevent abuse and fix mistakes in lessons: limits, reports (legitimate interest).</li>
+</ul>
+
+<h2>How long we keep data, and your rights</h2>
+<p>Data on the server is kept for as long as the account exists. «Delete account and progress» in the app's profile immediately
+deletes the user and all their rows in our database. Data on the phone goes with the app; Apple, Google and RevenueCat may keep
+purchase records for longer, as the law requires.</p>
+<p>You can get a copy of your data, correct or delete it, restrict its processing or object to it: just write to us. You can also
+complain to the data protection authority in your country.</p>
+
+<h2>Children</h2>
+<p>Falamos is not intended for children under 16, and we do not knowingly collect their data. If such data has reached us, write and we will delete it.</p>
+
+<h2>Changes</h2>
+<p>If this policy changes, the date at the top will change, and we will tell you about important changes in the app.</p>
+</section>
+</main>
+</body>
+</html>

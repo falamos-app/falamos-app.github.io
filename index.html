@@ -46,6 +46,7 @@
   --struck: rgba(17, 17, 17, .6);
   --l1: #2B63C6; --l2: #C2381F; --l9: #17845A;
   --night: #0C0B0A;
+  --pole: #111111;
   --ui: "Geologica", system-ui, sans-serif;
   --pt: "Bricolage", "Geologica", system-ui, sans-serif;
   --gutter: clamp(16px, 4vw, 56px);
@@ -69,6 +70,7 @@
     --chip: #3A3420;
     --on-chip: #F0C02A;
     --struck: rgba(237, 234, 227, .58);
+    --pole: #45423C;
   }
 }
 
@@ -94,8 +96,7 @@ html.uk [data-l="en"] { display: none; }
 /* ---------- The stop ---------- */
 .stop { position: relative; padding: clamp(24px, 6vh, 72px) var(--gutter) clamp(40px, 8vh, 96px); overflow: hidden; }
 .stop-inner { max-width: var(--wide); margin: 0 auto; display: grid; grid-template-columns: minmax(300px, 400px) minmax(0, 1fr); gap: clamp(32px, 5vw, 72px); align-items: start; position: relative; }
-.pole { position: absolute; top: calc(-1 * clamp(24px, 6vh, 72px)); bottom: calc(-1 * clamp(40px, 8vh, 96px)); left: 64px; width: 14px; background: var(--ink); border-radius: 0 0 4px 4px; }
-@media (prefers-color-scheme: dark) { .pole { background: #45423C; } }
+.pole { position: absolute; top: calc(-1 * clamp(24px, 6vh, 72px)); bottom: calc(-1 * clamp(40px, 8vh, 96px)); left: 64px; width: 14px; background: var(--pole); border-radius: 0 0 4px 4px; }
 
 .sign { position: relative; background: var(--sign); color: var(--sign-text); border-radius: 22px; padding: 30px 30px 28px; box-shadow: 8px 8px 0 var(--shadow); margin-top: 40px; }
 .sign-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
@@ -153,8 +154,10 @@ html.uk [data-l="en"] { display: none; }
 /* ---------- The line: stops ---------- */
 .line { position: relative; padding: 0 var(--gutter) clamp(48px, 8vw, 96px); }
 .line-inner { max-width: var(--wide); margin: 0 auto; position: relative; }
-.line-inner::before { content: ""; position: absolute; left: 29px; top: 0; bottom: 0; width: 6px; background: var(--ink); border-radius: 3px; }
-@media (prefers-color-scheme: dark) { .line-inner::before { background: var(--rail); } }
+/* The rail takes each stop's line colour, as the course map in the app; the last stretch runs on into the terminus pole. */
+.halt::before { content: ""; position: absolute; left: 29px; top: 0; bottom: 0; width: 6px; background: var(--seg, var(--pole)); }
+.halt:last-child::before { bottom: calc(-1 * clamp(48px, 8vw, 96px)); }
+#financas { --seg: var(--l1); } #casa { --seg: var(--l2); } #saude { --seg: var(--l9); } #a2 { --seg: var(--pole); }
 .halt { position: relative; display: grid; grid-template-columns: 64px minmax(0, 5fr) minmax(0, 6fr); column-gap: clamp(24px, 4vw, 56px); padding: clamp(56px, 8vw, 104px) 0 0; scroll-margin-top: 24px; }
 .halt-no { position: relative; z-index: 1; width: 64px; height: 64px; border-radius: 16px; display: grid; place-items: center; color: #fff; font: 800 28px/1 var(--pt); border: 3px solid var(--ground); box-shadow: 0 0 0 2px var(--line); }
 .halt-no.a2 { background: #111111; color: #FFCC1A; }
@@ -228,15 +231,20 @@ html.uk [data-l="en"] { display: none; }
 .parts li.on { background: var(--ink); color: var(--ground); border-color: var(--ink); }
 
 /* ---------- Terminus ---------- */
-.terminus { padding: clamp(72px, 10vw, 136px) var(--gutter) 40px; background: var(--sign); color: var(--sign-text); }
-.terminus-inner { max-width: var(--wide); margin: 0 auto; display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: clamp(32px, 6vw, 96px); align-items: end; }
-.bye { font: 800 clamp(64px, 11vw, 150px)/.9 var(--pt); letter-spacing: -.04em; }
+.terminus { padding: clamp(72px, 10vw, 136px) var(--gutter) 40px; }
+.terminus-inner { max-width: var(--wide); margin: 0 auto; position: relative; padding-top: 1px; }
+.terminus .pole { top: calc(-1 * clamp(72px, 10vw, 136px)); bottom: -48px; left: 25px; border-radius: 0 0 4px 4px; }
+.end { margin-top: 0; padding: 0; overflow: hidden; max-width: 1040px; }
+.end-head { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 14px 30px; border-bottom: 2px solid var(--sign-line); font: 700 15px/1.2 var(--ui); letter-spacing: .06em; text-transform: uppercase; }
+.end-head [lang="pt"] { font: 800 20px/1.1 var(--pt); letter-spacing: 0; text-transform: none; }
+.end-body { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: 28px clamp(32px, 5vw, 72px); align-items: end; padding: clamp(28px, 4vw, 48px) 30px clamp(28px, 4vw, 40px); }
+.bye { font: 800 clamp(64px, 10vw, 140px)/.9 var(--pt); letter-spacing: -.04em; }
 .bye-note { font: 600 20px/1.4 var(--ui); color: var(--sign-muted); margin-top: 20px; max-width: 30ch; }
-.terminus .plates { margin-top: 0; }
-footer { max-width: var(--wide); margin: clamp(56px, 8vw, 96px) auto 0; padding-top: 22px; border-top: 2px solid var(--sign-muted); display: flex; flex-wrap: wrap; gap: 12px 28px; font: 600 15px/1.4 var(--ui); color: var(--sign-muted); }
-footer a { color: var(--sign-text); }
+.end .plates { margin-top: 0; }
+.end :focus-visible { outline-color: var(--sign-text); }
+footer { position: relative; max-width: var(--wide); margin: 64px auto 0; padding: 22px 0 0 64px; border-top: 2px solid var(--line); display: flex; flex-wrap: wrap; gap: 12px 28px; font: 600 15px/1.4 var(--ui); color: var(--muted); }
+footer a { color: var(--ink); }
 footer .copy { margin-left: auto; }
-.terminus :focus-visible { outline-color: var(--sign-text); }
 
 /* ---------- Narrow screens ---------- */
 @media (max-width: 960px) {
@@ -247,7 +255,8 @@ footer .copy { margin-left: auto; }
   .stop-inner > .sign, .stop-inner > .board { position: relative; }
   .halt { grid-template-columns: 64px minmax(0, 1fr); }
   .halt .demo { grid-column: 2; margin-top: 36px; }
-  .terminus-inner { grid-template-columns: minmax(0, 1fr); align-items: start; }
+  .end-body { grid-template-columns: minmax(0, 1fr); }
+  .terminus .pole { left: 25px; }
 }
 @media (max-width: 600px) {
   body { font-size: 16px; }
@@ -264,16 +273,20 @@ footer .copy { margin-left: auto; }
   .board-foot { padding: 14px 18px; }
   .tram video { aspect-ratio: 4 / 3; }
   .tram figcaption { right: var(--gutter); }
-  .line-inner::before { left: 19px; width: 5px; }
+  .halt::before { left: 19px; width: 5px; }
   .pole { left: 15px; width: 12px; }
   .halt { grid-template-columns: 44px minmax(0, 1fr); column-gap: 18px; }
   .halt-no { width: 44px; height: 44px; font-size: 20px; border-radius: 12px; }
   .halt .demo { grid-column: 1 / -1; }
-  .explain, .again { margin-left: 12px; }
+  .explain { margin-left: 12px; }
+  .again { margin-left: 36px; }
   .talk { padding-left: 36px; }
   .pair { grid-template-columns: minmax(0, 1fr); }
   .pair s { text-align: left; }
   footer .copy { margin-left: 0; }
+  footer { padding-left: 44px; }
+  .terminus .pole { left: 15px; }
+  .end-head, .end-body { padding-left: 22px; padding-right: 22px; }
 }
 </style>
 </head>
@@ -469,6 +482,10 @@ footer .copy { margin-left: auto; }
 
 <section class="terminus" aria-labelledby="bye-title">
   <div class="terminus-inner">
+    <div class="pole" aria-hidden="true"></div>
+    <div class="sign end">
+      <p class="end-head"><span lang="pt">Fim da linha</span><span><span data-l="en">End of the line</span><span data-l="uk">Кінцева</span></span></p>
+      <div class="end-body">
     <div>
       <h2 class="bye" id="bye-title" lang="pt">Falamos!</h2>
       <p class="bye-note"><span data-l="en">“We speak” — and how people in Portugal say “talk soon”.</span><span data-l="uk">«Ми говоримо» — і так у Португалії кажуть «ще поговоримо».</span></p>
@@ -476,6 +493,8 @@ footer .copy { margin-left: auto; }
     <div class="plates">
       <div class="plate"><svg aria-hidden="true"><use href="#phone"/></svg>App Store<span class="soon"><span data-l="en">Coming soon</span><span data-l="uk">Скоро</span></span></div>
       <div class="plate"><svg aria-hidden="true"><use href="#phone"/></svg>Google Play<span class="soon"><span data-l="en">Coming soon</span><span data-l="uk">Скоро</span></span></div>
+    </div>
+      </div>
     </div>
   </div>
   <footer>

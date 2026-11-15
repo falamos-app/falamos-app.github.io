@@ -258,7 +258,7 @@ On desktop the header is a two-column grid with the sign in a 300–400px column
 
 At 960px and below the header stacks into sign then board, and the demo moves under the text. At 600px and below the pole and rail narrow to 12px and 5px, the line squares shrink to 44–48px, the board drops its arrow column and Portuguese subtitle, the tram video crops to 4:3, and the pairs stack.
 
-**The One Axis Rule.** The pole and the rail share the left axis, so the reader always rides the same line down the page.
+**The One Axis Rule.** The pole, the rail and the terminus pole share the left axis, so the reader always rides the same line down the page, from the first stop to the end of the line.
 
 ## Elevation & Depth
 
@@ -280,7 +280,7 @@ Corners are generously rounded but never pill-soft on containers: 22px for the s
 ## Components
 
 ### Stop Sign
-An ink route board with yellow lettering (at night, a yellow board with graphite lettering). It holds the app mark, the language switch, «Falamos» in Display, the tagline, a short description in sign-muted, and two store plates. It uses 22px corners, 30px padding and the 8px street-furniture shadow. The terminus reuses the sign's colours as a full-width band.
+An ink route board with yellow lettering (at night, a yellow board with graphite lettering). It holds the app mark, the language switch, «Falamos» in Display, the tagline, a short description in sign-muted, and two store plates. It uses 22px corners, 30px padding and the 8px street-furniture shadow. The terminus is the same sign hung on the pole at the end of the line: a header strip («Fim da linha» in Bricolage, «End of the line» / «Кінцева» in the label role) over «Falamos!», the note and the store plates; the footer sits on the ground below.
 
 ### Departures Board
 A white board with a 2px edge, 22px corners and the 8px shadow. The header is ink with yellow lettering: a 15px uppercase Geologica label on the left and «Português de Portugal» in Bricolage on the right. Each row is a link: a line square, the destination in Bricolage, the worry in muted Geologica, and an arrow. Rows are divided by 2px rules. On hover a row fills with hover-cream and the arrow slides 5px right (0.25s, `cubic-bezier(.2,.8,.2,1)`). Focus draws the global 3px ink outline inset by 5px. A paper-coloured foot lists the other lines.
@@ -308,7 +308,7 @@ White with an edge and a 3px shadow for the other speaker. The learner's own bub
 Rows with a 2px edge and 14px corners, Bricolage 700 at 18px, and a small 8px-cornered letter box. The right answer turns ink with yellow (yellow with graphite at night).
 
 ### Rail and Stops
-A 6px rail runs down the page with stop sections hung on it. Inside the renting demo, a 4px rail in the line's colour carries 20px ring stops, filled once a stop is done.
+A 6px rail runs down the page with stop sections hung on it. Each stop's stretch takes its line's colour (blue, red, green; the A2 stretch is the pole colour), as the course map in the app, and the last stretch runs on into the terminus pole. Inside the renting demo, a 4px rail in the line's colour carries 20px ring stops, filled once a stop is done.
 
 ### Night Tram
 A full-width video on night-sky, bordered top and bottom by 2px. Its caption is a graphite pill of text, with a 46px round graphite pause button in night yellow next to it. The video plays only when it comes near the viewport and only without reduced motion. Otherwise the poster stays and the button offers to play.

@@ -8,11 +8,14 @@
 <meta name="theme-color" content="#FFCC1A" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#1E1D1A" media="(prefers-color-scheme: dark)">
 <meta name="color-scheme" content="light dark">
-<link rel="canonical" href="https://falamos.app/">
 <link rel="icon" href="/favicon.ico" sizes="48x48">
-<link rel="icon" href="assets/icons/favicon-32.png" sizes="32x32">
-<link rel="icon" href="assets/icons/icon-192.png" sizes="192x192">
-<link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+<link rel="icon" href="/assets/icons/favicon-32.png" sizes="32x32">
+<link rel="icon" href="/assets/icons/icon-192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<link rel="canonical" href="https://falamos.app/">
+<link rel="alternate" hreflang="en" href="https://falamos.app/">
+<link rel="alternate" hreflang="uk" href="https://falamos.app/uk/">
+<link rel="alternate" hreflang="x-default" href="https://falamos.app/">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://falamos.app/">
 <meta property="og:title" content="Falamos — European Portuguese for people who moved">
@@ -25,19 +28,15 @@
 <meta property="og:locale" content="en_GB">
 <meta property="og:locale:alternate" content="uk_UA">
 <meta name="twitter:card" content="summary_large_image">
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","name":"Falamos","url":"https://falamos.app/","inLanguage":["en","uk"],
- "description":"An app for learning European Portuguese (pt-PT) for people who moved to Portugal.",
- "publisher":{"@type":"Organization","name":"Falamos","url":"https://falamos.app/","logo":"https://falamos.app/assets/icons/icon-192.png","email":"support@falamos.app"}}
-</script>
-<link rel="preload" href="assets/fonts/bricolage-800.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="assets/fonts/geologica-400.woff2" as="font" type="font/woff2" crossorigin>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://falamos.app/#org", "name": "Falamos", "url": "https://falamos.app/", "logo": "https://falamos.app/assets/icons/icon-192.png", "email": "support@falamos.app"}, {"@type": "WebSite", "@id": "https://falamos.app/#site", "name": "Falamos", "url": "https://falamos.app/", "inLanguage": "en", "description": "Falamos is an app for learning European Portuguese (pt-PT) for people who moved to Portugal: letters from Finanças, renting, the doctor and the A2 exam. Coming to the App Store and Google Play.", "publisher": {"@id": "https://falamos.app/#org"}}, {"@type": "MobileApplication", "name": "Falamos", "operatingSystem": "iOS, Android", "applicationCategory": "EducationalApplication", "inLanguage": ["en", "uk"], "description": "Falamos is an app for learning European Portuguese (pt-PT) for people who moved to Portugal: letters from Finanças, renting, the doctor and the A2 exam. Coming to the App Store and Google Play.", "publisher": {"@id": "https://falamos.app/#org"}, "about": {"@type": "Language", "name": "European Portuguese", "alternateName": "pt-PT"}}, {"@type": "FAQPage", "inLanguage": "en", "mainEntity": [{"@type": "Question", "name": "Is it European or Brazilian Portuguese?", "acceptedAnswer": {"@type": "Answer", "text": "Only European Portuguese (pt-PT), as it is spoken in Portugal: chamo-me, not me chamo; autocarro, not ônibus; telemóvel, not celular. A Brazilian form in the course is treated as a mistake and fixed."}}, {"@type": "Question", "name": "Who is Falamos for?", "acceptedAnswer": {"@type": "Answer", "text": "For people who are moving to Portugal or already live there and need the language for real life: the tax office and the NIF, renting a home, the doctor, the bank, school."}}, {"@type": "Question", "name": "Will it help me with the CIPLE A2 exam?", "acceptedAnswer": {"@type": "Answer", "text": "A2 is the level needed for permanent residence and citizenship. The course goes level by level towards it, and each level ends with a practice test in the CIPLE format: reading, listening, writing and speaking. The first release covers all of A1; A2 comes next."}}, {"@type": "Question", "name": "Can it explain a letter from Finanças or AIMA?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Photograph a letter, a contract or a sign: the text is recognised on your phone, and only that text is sent to be explained in your language. Pick the words you need, and they join your review."}}, {"@type": "Question", "name": "Which languages are the explanations in?", "acceptedAnswer": {"@type": "Answer", "text": "English and Ukrainian. The Portuguese is the same for everyone; translations and grammar notes are written for your language."}}, {"@type": "Question", "name": "Do I need an account?", "acceptedAnswer": {"@type": "Answer", "text": "No. Falamos works without registration. You can sign in with Apple or Google to keep your progress when you change phones."}}, {"@type": "Question", "name": "When can I get it?", "acceptedAnswer": {"@type": "Answer", "text": "Falamos is coming soon to the App Store (iPhone) and Google Play (Android)."}}]}]}</script>
+<link rel="preload" href="/assets/fonts/bricolage-800.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/geologica-400.woff2" as="font" type="font/woff2" crossorigin>
 <style>
-@font-face { font-family: "Geologica"; src: url(assets/fonts/geologica-400.woff2) format("woff2"); font-weight: 400; font-display: swap; }
-@font-face { font-family: "Geologica"; src: url(assets/fonts/geologica-600.woff2) format("woff2"); font-weight: 600; font-display: swap; }
-@font-face { font-family: "Geologica"; src: url(assets/fonts/geologica-700.woff2) format("woff2"); font-weight: 700; font-display: swap; }
-@font-face { font-family: "Bricolage"; src: url(assets/fonts/bricolage-700.woff2) format("woff2"); font-weight: 700; font-display: swap; }
-@font-face { font-family: "Bricolage"; src: url(assets/fonts/bricolage-800.woff2) format("woff2"); font-weight: 800; font-display: swap; }
+@font-face { font-family: "Geologica"; src: url(/assets/fonts/geologica-400.woff2) format("woff2"); font-weight: 400; font-display: swap; }
+@font-face { font-family: "Geologica"; src: url(/assets/fonts/geologica-600.woff2) format("woff2"); font-weight: 600; font-display: swap; }
+@font-face { font-family: "Geologica"; src: url(/assets/fonts/geologica-700.woff2) format("woff2"); font-weight: 700; font-display: swap; }
+@font-face { font-family: "Bricolage"; src: url(/assets/fonts/bricolage-700.woff2) format("woff2"); font-weight: 700; font-display: swap; }
+@font-face { font-family: "Bricolage"; src: url(/assets/fonts/bricolage-800.woff2) format("woff2"); font-weight: 800; font-display: swap; }
 
 /* «B · Eléctrico», the app's colour roles (src/theme/colors.ts in the app repo). */
 :root {
@@ -101,10 +100,6 @@ a { color: inherit; text-underline-offset: .18em; text-decoration-thickness: 2px
 .skip:focus { left: 8px; }
 .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
 
-/* One language at a time. Without JavaScript the page stays English. */
-[data-l="uk"] { display: none; }
-html.uk [data-l="uk"] { display: revert; }
-html.uk [data-l="en"] { display: none; }
 
 /* ---------- The stop ---------- */
 .stop { position: relative; padding: clamp(24px, 6vh, 72px) var(--gutter) clamp(40px, 8vh, 96px); overflow: hidden; }
@@ -116,13 +111,17 @@ html.uk [data-l="en"] { display: none; }
 .mark { width: 70px; height: auto; flex: none; }
 .lang { display: inline-flex; border: 2px solid var(--sign-line); border-radius: 999px; padding: 3px; gap: 2px; }
 .lang a { padding: 5px 12px; border-radius: 999px; text-decoration: none; font: 700 14px/1.2 var(--ui); color: var(--sign-text); }
-.lang a[aria-current="true"] { background: var(--sign-text); color: var(--sign); }
+.lang a[aria-current] { background: var(--sign-text); color: var(--sign); }
 .name { font: 800 clamp(56px, 6vw, 76px)/.95 var(--pt); letter-spacing: -.03em; margin: 26px 0 14px; }
 .tagline { font: 700 22px/1.3 var(--ui); }
 .about { font: 400 16px/1.5 var(--ui); color: var(--sign-muted); margin-top: 12px; }
 .plates { display: grid; gap: 10px; margin-top: 24px; }
 .plate { display: flex; align-items: center; gap: 12px; border: 2px solid var(--sign-line); border-radius: 16px; padding: 11px 14px; font: 700 17px/1.2 var(--ui); }
 .plate svg { width: 22px; height: 22px; flex: none; }
+.badges { gap: 12px; }
+.badge { display: flex; align-items: center; gap: 14px; }
+.badge img { display: block; height: 48px; width: auto; }
+.badge .soon { font: 700 12px/1 var(--ui); letter-spacing: .06em; text-transform: uppercase; border: 2px solid var(--sign-line); border-radius: 999px; padding: 6px 10px; }
 .plate .soon { margin-left: auto; font: 700 12px/1 var(--ui); letter-spacing: .06em; text-transform: uppercase; border: 2px solid var(--sign-line); border-radius: 999px; padding: 5px 9px; }
 
 .board { background: var(--board); border: 2px solid var(--line); border-radius: 22px; box-shadow: 8px 8px 0 var(--shadow); overflow: hidden; }
@@ -170,11 +169,11 @@ html.uk [data-l="en"] { display: none; }
 /* The rail takes each stop's line colour, as the course map in the app; the last stretch runs on into the terminus pole. */
 .halt::before { content: ""; position: absolute; left: 29px; top: 0; bottom: 0; width: 6px; background: var(--seg, var(--pole)); }
 .halt:last-child::before { bottom: calc(-1 * clamp(48px, 8vw, 96px)); }
-#financas { --seg: var(--l1); } #casa { --seg: var(--l2); } #saude { --seg: var(--l9); } #a2 { --seg: var(--pole); }
+#financas { --seg: var(--l1); } #casa { --seg: var(--l2); } #saude { --seg: var(--l9); } #a2 { --seg: var(--pole); } #faq { --seg: var(--pole); }
 .halt { position: relative; display: grid; grid-template-columns: 64px minmax(0, 5fr) minmax(0, 6fr); column-gap: clamp(24px, 4vw, 56px); padding: clamp(56px, 8vw, 104px) 0 0; scroll-margin-top: 24px; }
 .halt-no { position: relative; z-index: 1; width: 64px; height: 64px; border-radius: 16px; display: grid; place-items: center; color: #fff; font: 800 28px/1 var(--pt); border: 3px solid var(--ground); box-shadow: 0 0 0 2px var(--line); }
-.halt-no.a2 { background: #111111; color: #FFCC1A; }
-@media (prefers-color-scheme: dark) { .halt-no.a2 { background: #F0C02A; color: #141311; } }
+.halt-no.a2, .halt-no.faq-no { background: #111111; color: #FFCC1A; }
+@media (prefers-color-scheme: dark) { .halt-no.a2, .halt-no.faq-no { background: #F0C02A; color: #141311; } }
 .halt-text { padding-top: 10px; }
 .halt h2 { font: 700 clamp(27px, 3vw, 40px)/1.14 var(--ui); letter-spacing: -.015em; text-wrap: balance; }
 .halt h2 [lang="pt"] { font-weight: 800; }
@@ -243,6 +242,18 @@ html.uk [data-l="en"] { display: none; }
 .parts li { border: 2px solid var(--line); border-radius: 999px; padding: 5px 11px; }
 .parts li.on { background: var(--ink); color: var(--ground); border-color: var(--ink); }
 
+/* ---------- Questions ---------- */
+.faq-body { position: relative; grid-column: 2 / -1; max-width: 860px; padding-top: 10px; }
+.faq-list { margin-top: 28px; background: var(--board); border: 2px solid var(--line); border-radius: 20px; box-shadow: 6px 6px 0 var(--shadow); overflow: hidden; }
+.faq-item + .faq-item { border-top: 2px solid var(--line); }
+.faq-item summary { list-style: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 20px 24px; font: 700 19px/1.35 var(--ui); }
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary:hover { background: var(--hover); }
+.faq-item summary:focus-visible { outline-offset: -5px; }
+.faq-item summary svg { width: 22px; height: 22px; flex: none; transition: transform .25s cubic-bezier(.2, .8, .2, 1); }
+.faq-item[open] summary svg { transform: rotate(45deg); }
+.faq-a { padding: 0 24px 22px; font: 400 17px/1.55 var(--ui); color: var(--muted); max-width: 68ch; }
+
 /* ---------- Terminus ---------- */
 .terminus { padding: clamp(72px, 10vw, 136px) var(--gutter) 40px; }
 .terminus-inner { max-width: var(--wide); margin: 0 auto; position: relative; padding-top: 1px; }
@@ -292,6 +303,10 @@ footer .copy { margin-left: auto; }
   .halt { grid-template-columns: 44px minmax(0, 1fr); column-gap: 18px; }
   .halt-no { width: 44px; height: 44px; font-size: 20px; border-radius: 12px; }
   .halt .demo { grid-column: 1 / -1; }
+  .faq-body { grid-column: 2; }
+  .faq-list { margin-left: -62px; }
+  .faq-item summary { padding: 18px; font-size: 17px; }
+  .faq-a { padding: 0 18px 18px; font-size: 16px; }
   .explain { margin-left: 12px; }
   .again { margin-left: 36px; }
   .talk { padding-left: 36px; }
@@ -305,13 +320,14 @@ footer .copy { margin-left: auto; }
 </style>
 </head>
 <body>
-<a class="skip" href="#lines"><span data-l="en">Skip to the lines</span><span data-l="uk">До ліній</span></a>
+<a class="skip" href="#lines"><span>Skip to the lines</span></a>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <symbol id="go" viewBox="0 0 24 24"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
   <symbol id="phone" viewBox="0 0 24 24"><rect x="6" y="2.5" width="12" height="19" rx="3" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M10.5 18.5h3" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></symbol>
   <symbol id="lock" viewBox="0 0 24 24"><rect x="5" y="10.5" width="14" height="10" rx="2.5" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M8.5 10.5V8a3.5 3.5 0 0 1 7 0v2.5" fill="none" stroke="currentColor" stroke-width="2.2"/></symbol>
   <symbol id="repeat" viewBox="0 0 24 24"><path d="M4 12a8 8 0 0 1 13.7-5.6L20 8.5M20 4v4.5h-4.5M20 12a8 8 0 0 1-13.7 5.6L4 15.5M4 20v-4.5h4.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></symbol>
   <symbol id="pause" viewBox="0 0 24 24"><path d="M8 5v14M16 5v14" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/></symbol>
   <symbol id="play" viewBox="0 0 24 24"><path d="M7 4.5v15l12-7.5z" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></symbol>
 </svg>
@@ -321,73 +337,73 @@ footer .copy { margin-left: auto; }
     <div class="pole" aria-hidden="true"></div>
     <div class="sign">
       <div class="sign-top">
-        <img class="mark" src="assets/icons/mark.png" width="295" height="320" alt="">
-        <nav class="lang" aria-label="Language · Мова"><a href="#en" data-lang="en" lang="en">EN</a><a href="#uk" data-lang="uk" lang="uk">UA</a></nav>
+        <img class="mark" src="/assets/icons/mark.png" width="295" height="320" alt="">
+        <nav class="lang" aria-label="Language"><a href="/" hreflang="en" lang="en" aria-current="page">EN</a><a href="/uk/" hreflang="uk" lang="uk">UA</a></nav>
       </div>
       <h1 class="name" lang="pt">Falamos</h1>
-      <p class="tagline"><span data-l="en">European Portuguese for people who moved to Portugal.</span><span data-l="uk">Європейська португальська для тих, хто переїхав до Португалії.</span></p>
-      <p class="about"><span data-l="en">An app for iPhone and Android: five minutes a day, lessons built on real life in Portugal, and only the Portuguese spoken there.</span><span data-l="uk">Застосунок для iPhone і Android: п'ять хвилин на день, уроки зі справжнього життя в Португалії і лише та португальська, якою там говорять.</span></p>
-      <div class="plates">
-        <div class="plate"><svg aria-hidden="true"><use href="#phone"/></svg>App Store<span class="soon"><span data-l="en">Coming soon</span><span data-l="uk">Скоро</span></span></div>
-        <div class="plate"><svg aria-hidden="true"><use href="#phone"/></svg>Google Play<span class="soon"><span data-l="en">Coming soon</span><span data-l="uk">Скоро</span></span></div>
+      <p class="tagline"><span>European Portuguese for people who moved to Portugal.</span></p>
+      <p class="about"><span>An app for iPhone and Android: five minutes a day, lessons built on real life in Portugal, and only the Portuguese spoken there.</span></p>
+      <div class="plates badges">
+        <div class="badge"><img src="/assets/badges/app-store.svg" width="120" height="40" alt="Download on the App Store"><span class="soon"><span>Coming soon</span></span></div>
+        <div class="badge"><img src="/assets/badges/google-play.svg" width="135" height="40" alt="Get it on Google Play"><span class="soon"><span>Coming soon</span></span></div>
       </div>
     </div>
 
     <section class="board" id="lines" aria-labelledby="board-title">
-      <div class="board-head"><h2 id="board-title"><span data-l="en">Lines from this stop</span><span data-l="uk">Лінії з цієї зупинки</span></h2><span lang="pt">Português de Portugal</span></div>
+      <div class="board-head"><h2 id="board-title"><span>Lines from this stop</span></h2><span lang="pt">Português de Portugal</span></div>
       <ol>
         <li><a class="row" href="#financas">
           <span class="no" style="background:var(--l1)" aria-hidden="true">1</span>
           <span class="dest" lang="pt"><span>Finanças e NIF</span></span>
-          <span class="worry"><span data-l="en">A letter from the tax office. What it says and what to do.</span><span data-l="uk">Лист із податкової. Що там і що робити.</span></span>
+          <span class="worry"><span>A letter from the tax office. What it says and what to do.</span></span>
           <svg class="go" aria-hidden="true"><use href="#go"/></svg>
         </a></li>
         <li><a class="row" href="#casa">
           <span class="no" style="background:var(--l2)" aria-hidden="true">2</span>
           <span class="dest" lang="pt"><span>Arrendar casa</span></span>
-          <span class="worry"><span data-l="en">Viewings, the contract, the deposit. Talking to the landlord.</span><span data-l="uk">Перегляд, договір, застава. Розмова з власником.</span></span>
+          <span class="worry"><span>Viewings, the contract, the deposit. Talking to the landlord.</span></span>
           <svg class="go" aria-hidden="true"><use href="#go"/></svg>
         </a></li>
         <li><a class="row" href="#saude">
           <span class="no" style="background:var(--l9)" aria-hidden="true">9</span>
           <span class="dest" lang="pt"><span>Saúde e SNS</span></span>
-          <span class="worry"><span data-l="en">The health centre, your patient number, the doctor, medicine.</span><span data-l="uk">Поліклініка, номер пацієнта, лікар, ліки.</span></span>
+          <span class="worry"><span>The health centre, your patient number, the doctor, medicine.</span></span>
           <svg class="go" aria-hidden="true"><use href="#go"/></svg>
         </a></li>
         <li><a class="row" href="#a2">
           <span class="no a2" aria-hidden="true">A2</span>
           <span class="dest" lang="pt"><span>Exame CIPLE</span></span>
-          <span class="worry"><span data-l="en">The road to A2 for residence or citizenship.</span><span data-l="uk">Шлях до A2 для посвідки чи громадянства.</span></span>
+          <span class="worry"><span>The road to A2 for residence or citizenship.</span></span>
           <svg class="go" aria-hidden="true"><use href="#go"/></svg>
         </a></li>
       </ol>
-      <p class="board-foot"><b><span data-l="en">Also from here:</span><span data-l="uk">Також звідси:</span></b> <span lang="pt">Na cidade · Banco e NISS · Trabalho e estudos · Viajar · A minha família</span></p>
+      <p class="board-foot"><b><span>Also from here:</span></b> <span lang="pt">Na cidade · Banco e NISS · Trabalho e estudos · Viajar · A minha família</span></p>
     </section>
   </div>
 </header>
 
 <main>
   <figure class="tram">
-    <video id="tram" muted loop playsinline preload="none" poster="assets/media/night-tram.webp" aria-hidden="true">
-      <source src="assets/media/night-tram.mp4" type="video/mp4">
+    <video id="tram" muted loop playsinline preload="none" poster="/assets/media/night-tram.webp" aria-hidden="true">
+      <source src="/assets/media/night-tram.mp4" type="video/mp4">
     </video>
     <figcaption>
       <button class="pause" type="button" id="tram-toggle" hidden><svg aria-hidden="true"><use href="#play"/></svg><span class="sr" data-label></span></button>
-      <p><span data-l="en">Five minutes a day, one stop at a time.</span><span data-l="uk">П'ять хвилин на день, зупинка за зупинкою.</span></p>
+      <p><span>Five minutes a day, one stop at a time.</span></p>
     </figcaption>
   </figure>
 
   <section class="ptpt" aria-labelledby="ptpt-title">
     <div class="ptpt-inner">
-      <h2 class="section-title" id="ptpt-title"><span data-l="en">Only the Portuguese of Portugal.</span><span data-l="uk">Лише португальська Португалії.</span></h2>
-      <p class="lede"><span data-l="en">Most apps teach Brazilian Portuguese. Here every word and phrase is as it's said in Lisbon and Porto.</span><span data-l="uk">Більшість застосунків учать бразильського варіанта. Тут кожне слово й фраза — як говорять у Лісабоні та Порту.</span></p>
+      <h2 class="section-title" id="ptpt-title"><span>Only the Portuguese of Portugal.</span></h2>
+      <p class="lede"><span>Most apps teach Brazilian Portuguese. Here every word and phrase is as it's said in Lisbon and Porto.</span></p>
       <ul class="pairs" lang="pt">
         <li class="pair"><s>me chamo</s><span>chamo-me</span></li>
         <li class="pair"><s>ônibus</s><span>autocarro</span></li>
         <li class="pair"><s>estou fazendo</s><span>estou a fazer</span></li>
         <li class="pair"><s>celular</s><span>telemóvel</span></li>
       </ul>
-      <p class="legend"><span><span data-l="en">Struck out: Brazil</span><span data-l="uk">Закреслено — Бразилія</span></span><span><span data-l="en">Not struck: Portugal</span><span data-l="uk">Без закреслення — Португалія</span></span></p>
+      <p class="legend"><span><span>Struck out: Brazil</span></span><span><span>Not struck: Portugal</span></span></p>
     </div>
   </section>
 
@@ -397,45 +413,45 @@ footer .copy { margin-left: auto; }
       <section class="halt" id="financas" aria-labelledby="financas-title">
         <div class="halt-no" style="background:var(--l1)" aria-hidden="true">1</div>
         <div class="halt-text">
-          <h2 id="financas-title"><span data-l="en">A letter from Finanças. What it says and what to do.</span><span data-l="uk">Лист із Finanças. Що там і що робити — українською.</span></h2>
-          <p class="body"><span data-l="en">Photograph a letter, a contract or a sign. Falamos explains it in your language, and the words you pick go into your review.</span><span data-l="uk">Сфотографуй лист, договір чи вивіску. Falamos пояснить його твоєю мовою, а обрані слова потраплять у повторення.</span></p>
-          <p class="small"><svg aria-hidden="true"><use href="#lock"/></svg><span><span data-l="en">The photo stays on your phone: only the recognised text is sent to be explained.</span><span data-l="uk">Фото лишається на телефоні: на пояснення йде лише розпізнаний текст.</span></span></p>
+          <h2 id="financas-title"><span>A letter from Finanças. What it says and what to do.</span></h2>
+          <p class="body"><span>Photograph a letter, a contract or a sign. Falamos explains it in your language, and the words you pick go into your review.</span></p>
+          <p class="small"><svg aria-hidden="true"><use href="#lock"/></svg><span><span>The photo stays on your phone: only the recognised text is sent to be explained.</span></span></p>
         </div>
         <div class="demo">
           <figure class="letter">
-            <figcaption class="from"><span lang="pt">Autoridade Tributária e Aduaneira</span><span class="tagchip"><span data-l="en">Example</span><span data-l="uk">Приклад</span></span></figcaption>
+            <figcaption class="from"><span lang="pt">Autoridade Tributária e Aduaneira</span><span class="tagchip"><span>Example</span></span></figcaption>
             <p lang="pt">Informamos que deve <mark>entregar</mark> a declaração de IRS até 30 de junho. A entrega fora do <mark>prazo</mark> dá lugar a <mark>coima</mark>.</p>
           </figure>
           <div class="card explain">
-            <p class="summary"><span data-l="en">A letter from the tax office: file your IRS return by 30 June. If you're late, you can be fined.</span><span data-l="uk">Лист із податкової: подати декларацію IRS до 30 червня. Якщо запізнитися — можуть оштрафувати.</span></p>
+            <p class="summary"><span>A letter from the tax office: file your IRS return by 30 June. If you're late, you can be fined.</span></p>
             <ul class="words">
-              <li class="word"><b lang="pt">entregar</b><span><span data-l="en">to submit</span><span data-l="uk">подати</span></span></li>
-              <li class="word"><b lang="pt">prazo</b><span><span data-l="en">deadline</span><span data-l="uk">строк</span></span></li>
-              <li class="word"><b lang="pt">coima</b><span><span data-l="en">fine</span><span data-l="uk">штраф</span></span></li>
+              <li class="word"><b lang="pt">entregar</b><span><span>to submit</span></span></li>
+              <li class="word"><b lang="pt">prazo</b><span><span>deadline</span></span></li>
+              <li class="word"><b lang="pt">coima</b><span><span>fine</span></span></li>
             </ul>
           </div>
-          <p class="again"><svg aria-hidden="true"><use href="#repeat"/></svg><span><span data-l="en"><b lang="pt">Coima</b> from your letter comes back tomorrow.</span><span data-l="uk"><b lang="pt">Coima</b> з твого листа повториш завтра.</span></span></p>
+          <p class="again"><svg aria-hidden="true"><use href="#repeat"/></svg><span><span><b lang="pt">Coima</b> from your letter comes back tomorrow.</span></span></p>
         </div>
       </section>
 
       <section class="halt" id="casa" aria-labelledby="casa-title">
         <div class="halt-no" style="background:var(--l2)" aria-hidden="true">2</div>
         <div class="halt-text">
-          <h2 id="casa-title"><span data-l="en">Not “Lesson 7”.</span><span data-l="uk">Не «Урок 7».</span> <span lang="pt">Queria ver o apartamento.</span></h2>
-          <p class="body"><span data-l="en">Lessons are the tax office, renting, the city and the doctor. After the first week, take the line you need now, in any order.</span><span data-l="uk">Уроки — це податкова, оренда, місто й лікар. Після першого тижня бери ту лінію, що потрібна зараз, у будь-якому порядку.</span></p>
+          <h2 id="casa-title"><span>Not “Lesson 7”.</span> <span lang="pt">Queria ver o apartamento.</span></h2>
+          <p class="body"><span>Lessons are the tax office, renting, the city and the doctor. After the first week, take the line you need now, in any order.</span></p>
         </div>
         <div class="demo">
           <div class="card strip">
             <div class="strip-head"><span class="no" style="background:var(--l2)" aria-hidden="true">2</span><b lang="pt">Arrendar casa</b></div>
             <ol class="stops">
-              <li class="done"><span data-l="en">Finding a place</span><span data-l="uk">Пошук житла</span></li>
-              <li class="done"><span data-l="en">The viewing</span><span data-l="uk">Перегляд</span></li>
-              <li><span data-l="en">Questions for the landlord</span><span data-l="uk">Питання власнику</span></li>
-              <li><span data-l="en">The contract</span><span data-l="uk">Договір</span></li>
-              <li><span data-l="en">Repairs</span><span data-l="uk">Поломки</span></li>
-              <li><span data-l="en">Neighbours</span><span data-l="uk">Сусіди</span></li>
+              <li class="done"><span>Finding a place</span></li>
+              <li class="done"><span>The viewing</span></li>
+              <li><span>Questions for the landlord</span></li>
+              <li><span>The contract</span></li>
+              <li><span>Repairs</span></li>
+              <li><span>Neighbours</span></li>
             </ol>
-            <p class="lesson-shape"><span data-l="en">Each stop: up to a dozen new words, a short voiced dialogue, and exercises from recognising to saying it yourself.</span><span data-l="uk">Кожна зупинка: до дюжини нових слів, короткий діалог з озвучкою і вправи — від «впізнати» до «сказати самому».</span></p>
+            <p class="lesson-shape"><span>Each stop: up to a dozen new words, a short voiced dialogue, and exercises from recognising to saying it yourself.</span></p>
           </div>
         </div>
       </section>
@@ -443,22 +459,22 @@ footer .copy { margin-left: auto; }
       <section class="halt" id="saude" aria-labelledby="saude-title">
         <div class="halt-no" style="background:var(--l9)" aria-hidden="true">9</div>
         <div class="halt-text">
-          <h2 id="saude-title"><span data-l="en">Didn't catch that?</span><span data-l="uk">Не зрозумів?</span> <span lang="pt">Desculpe, não percebo.</span></h2>
-          <p class="body"><span data-l="en">Dialogues for Finanças, AIMA and the doctor, voiced in European Portuguese. The phrasebook works from day one, no lessons needed.</span><span data-l="uk">Діалоги для Finanças, AIMA й лікаря озвучено так, як говорять у Португалії. Розмовник працює з першого дня, без уроків.</span></p>
+          <h2 id="saude-title"><span>Didn't catch that?</span> <span lang="pt">Desculpe, não percebo.</span></h2>
+          <p class="body"><span>Dialogues for Finanças, AIMA and the doctor, voiced in European Portuguese. The phrasebook works from day one, no lessons needed.</span></p>
         </div>
         <div class="demo">
           <div class="talk">
             <div class="them">
-              <p class="who"><span data-l="en">Reception</span><span data-l="uk">Реєстратура</span></p>
-              <p class="bubble"><span lang="pt">Bom dia. Qual é o seu número de utente?</span><span class="tr"><span data-l="en">Good morning. What's your patient number?</span><span data-l="uk">Добрий день. Який ваш номер пацієнта?</span></span></p>
+              <p class="who"><span>Reception</span></p>
+              <p class="bubble"><span lang="pt">Bom dia. Qual é o seu número de utente?</span><span class="tr"><span>Good morning. What's your patient number?</span></span></p>
             </div>
             <div class="me">
-              <p class="who"><span data-l="en">You</span><span data-l="uk">Ти</span></p>
-              <p class="bubble"><span lang="pt">Desculpe, não percebo. Pode repetir, por favor?</span><span class="tr"><span data-l="en">Sorry, I don't understand. Could you say it again, please?</span><span data-l="uk">Перепрошую, не розумію. Можете повторити, будь ласка?</span></span></p>
+              <p class="who"><span>You</span></p>
+              <p class="bubble"><span lang="pt">Desculpe, não percebo. Pode repetir, por favor?</span><span class="tr"><span>Sorry, I don't understand. Could you say it again, please?</span></span></p>
             </div>
             <div class="them">
-              <p class="who"><span data-l="en">Reception</span><span data-l="uk">Реєстратура</span></p>
-              <p class="bubble"><span lang="pt">O seu número de utente do SNS.</span><span class="tr"><span data-l="en">Your SNS patient number.</span><span data-l="uk">Ваш номер пацієнта SNS.</span></span></p>
+              <p class="who"><span>Reception</span></p>
+              <p class="bubble"><span lang="pt">O seu número de utente do SNS.</span><span class="tr"><span>Your SNS patient number.</span></span></p>
             </div>
           </div>
         </div>
@@ -467,12 +483,12 @@ footer .copy { margin-left: auto; }
       <section class="halt" id="a2" aria-labelledby="a2-title">
         <div class="halt-no a2" aria-hidden="true">A2</div>
         <div class="halt-text">
-          <h2 id="a2-title"><span data-l="en">A2 for residence or citizenship? Practise the exam first.</span><span data-l="uk">A2 для посвідки чи громадянства? Спершу — пробний іспит.</span></h2>
-          <p class="body"><span data-l="en">The course goes level by level towards A2, and each level ends with a practice test in the CIPLE format: reading, listening, writing and speaking. The first release covers all of A1; A2 comes next.</span><span data-l="uk">Курс іде рівень за рівнем до A2, і кожен рівень закінчується пробним тестом у форматі CIPLE: читання, аудіювання, письмо й розмова. Перший реліз — увесь A1, A2 — наступним.</span></p>
+          <h2 id="a2-title"><span>A2 for residence or citizenship? Practise the exam first.</span></h2>
+          <p class="body"><span>The course goes level by level towards A2, and each level ends with a practice test in the CIPLE format: reading, listening, writing and speaking. The first release covers all of A1; A2 comes next.</span></p>
         </div>
         <div class="demo">
           <figure class="card practice">
-            <figcaption class="practice-head"><span><span data-l="en">Practice test · CIPLE format</span><span data-l="uk">Пробний тест · формат CIPLE</span></span><span class="tagchip"><span data-l="en">Example</span><span data-l="uk">Приклад</span></span></figcaption>
+            <figcaption class="practice-head"><span><span>Practice test · CIPLE format</span></span><span class="tagchip"><span>Example</span></span></figcaption>
             <div class="notice" lang="pt"><b>AVISO</b><p>A farmácia está fechada ao domingo. Aberta de segunda a sábado, das 9h às 19h.</p></div>
             <p class="q" lang="pt">Quando é que a farmácia está fechada?</p>
             <ol class="options" lang="pt">
@@ -481,12 +497,49 @@ footer .copy { margin-left: auto; }
               <li><i>C</i>à segunda-feira</li>
             </ol>
             <ul class="parts">
-              <li class="on"><span data-l="en">Reading</span><span data-l="uk">Читання</span></li>
-              <li><span data-l="en">Listening</span><span data-l="uk">Аудіювання</span></li>
-              <li><span data-l="en">Writing</span><span data-l="uk">Письмо</span></li>
-              <li><span data-l="en">Speaking</span><span data-l="uk">Розмова</span></li>
+              <li class="on"><span>Reading</span></li>
+              <li><span>Listening</span></li>
+              <li><span>Writing</span></li>
+              <li><span>Speaking</span></li>
             </ul>
           </figure>
+        </div>
+      </section>
+
+      <section class="halt faq" id="faq" aria-labelledby="faq-title">
+        <div class="halt-no faq-no" aria-hidden="true">?</div>
+        <div class="faq-body">
+          <h2 id="faq-title"><span>Questions before you get on</span></h2>
+          <div class="faq-list">
+            <details class="faq-item" open>
+              <summary><span>Is it European or Brazilian Portuguese?</span><svg aria-hidden="true"><use href="#plus"/></svg></summary>
+              <p class="faq-a"><span>Only European Portuguese (pt-PT), as it is spoken in Portugal: chamo-me, not me chamo; autocarro, not ônibus; telemóvel, not celular. A Brazilian form in the course is treated as a mistake and fixed.</span></p>
+            </details>
+            <details class="faq-item">
+              <summary><span>Who is Falamos for?</span><svg aria-hidden="true"><use href="#plus"/></svg></summary>
+              <p class="faq-a"><span>For people who are moving to Portugal or already live there and need the language for real life: the tax office and the NIF, renting a home, the doctor, the bank, school.</span></p>
+            </details>
+            <details class="faq-item">
+              <summary><span>Will it help me with the CIPLE A2 exam?</span><svg aria-hidden="true"><use href="#plus"/></svg></summary>
+              <p class="faq-a"><span>A2 is the level needed for permanent residence and citizenship. The course goes level by level towards it, and each level ends with a practice test in the CIPLE format: reading, listening, writing and speaking. The first release covers all of A1; A2 comes next.</span></p>
+            </details>
+            <details class="faq-item">
+              <summary><span>Can it explain a letter from Finanças or AIMA?</span><svg aria-hidden="true"><use href="#plus"/></svg></summary>
+              <p class="faq-a"><span>Yes. Photograph a letter, a contract or a sign: the text is recognised on your phone, and only that text is sent to be explained in your language. Pick the words you need, and they join your review.</span></p>
+            </details>
+            <details class="faq-item">
+              <summary><span>Which languages are the explanations in?</span><svg aria-hidden="true"><use href="#plus"/></svg></summary>
+              <p class="faq-a"><span>English and Ukrainian. The Portuguese is the same for everyone; translations and grammar notes are written for your language.</span></p>
+            </details>
+            <details class="faq-item">
+              <summary><span>Do I need an account?</span><svg aria-hidden="true"><use href="#plus"/></svg></summary>
+              <p class="faq-a"><span>No. Falamos works without registration. You can sign in with Apple or Google to keep your progress when you change phones.</span></p>
+            </details>
+            <details class="faq-item">
+              <summary><span>When can I get it?</span><svg aria-hidden="true"><use href="#plus"/></svg></summary>
+              <p class="faq-a"><span>Falamos is coming soon to the App Store (iPhone) and Google Play (Android).</span></p>
+            </details>
+          </div>
         </div>
       </section>
 
@@ -498,22 +551,22 @@ footer .copy { margin-left: auto; }
   <div class="terminus-inner">
     <div class="pole" aria-hidden="true"></div>
     <div class="sign end">
-      <p class="end-head"><span lang="pt">Fim da linha</span><span><span data-l="en">End of the line</span><span data-l="uk">Кінцева</span></span></p>
+      <p class="end-head"><span lang="pt">Fim da linha</span><span><span>End of the line</span></span></p>
       <div class="end-body">
     <div>
       <h2 class="bye" id="bye-title" lang="pt">Falamos!</h2>
-      <p class="bye-note"><span data-l="en">Falamos means “we speak”. In Portugal it’s also a goodbye: “Talk soon!”</span><span data-l="uk">Falamos означає «ми говоримо». А ще так у Португалії прощаються: «Ще поговоримо!»</span></p>
+      <p class="bye-note"><span>Falamos means “we speak”. In Portugal it’s also a goodbye: “Talk soon!”</span></p>
     </div>
-    <div class="plates">
-      <div class="plate"><svg aria-hidden="true"><use href="#phone"/></svg>App Store<span class="soon"><span data-l="en">Coming soon</span><span data-l="uk">Скоро</span></span></div>
-      <div class="plate"><svg aria-hidden="true"><use href="#phone"/></svg>Google Play<span class="soon"><span data-l="en">Coming soon</span><span data-l="uk">Скоро</span></span></div>
+    <div class="plates badges">
+      <div class="badge"><img src="/assets/badges/app-store.svg" width="120" height="40" alt="Download on the App Store"><span class="soon"><span>Coming soon</span></span></div>
+      <div class="badge"><img src="/assets/badges/google-play.svg" width="135" height="40" alt="Get it on Google Play"><span class="soon"><span>Coming soon</span></span></div>
     </div>
       </div>
     </div>
   </div>
   <footer>
-    <a href="privacy/#en" id="privacy-link"><span data-l="en">Privacy</span><span data-l="uk">Приватність</span></a>
-    <span><span data-l="en">Support:</span><span data-l="uk">Підтримка:</span> <a href="mailto:support@falamos.app">support@falamos.app</a></span>
+    <a href="/privacy/#en"><span>Privacy</span></a>
+    <span><span>Support:</span> <a href="mailto:support@falamos.app">support@falamos.app</a></span>
     <span class="copy">© 2026 Falamos</span>
   </footer>
 </section>
@@ -522,41 +575,23 @@ footer .copy { margin-left: auto; }
   (function () {
     var root = document.documentElement;
     root.classList.add('js');
-    var meta = {
-      en: { title: 'Falamos — European Portuguese for people who moved', pause: 'Pause the video', play: 'Play the video' },
-      uk: { title: 'Falamos — європейська португальська для тих, хто переїхав', pause: 'Зупинити відео', play: 'Увімкнути відео' }
+    var labels = {
+      en: { pause: 'Pause the video', play: 'Play the video' },
+      uk: { pause: 'Зупинити відео', play: 'Увімкнути відео' }
     };
-    var lang = 'en';
+    var lang = root.lang === 'uk' ? 'uk' : 'en';
+    // Old links to falamos.app/#uk land on the Ukrainian page.
+    if (lang === 'en' && location.hash === '#uk') { location.replace('/uk/'); }
     var video = document.getElementById('tram');
     var toggle = document.getElementById('tram-toggle');
     var label = toggle.querySelector('[data-label]');
 
     function labelToggle() {
       var playing = !video.paused;
-      label.textContent = meta[lang][playing ? 'pause' : 'play'];
+      label.textContent = labels[lang][playing ? 'pause' : 'play'];
       toggle.querySelector('use').setAttribute('href', playing ? '#pause' : '#play');
     }
-    // English unless the address asks for Ukrainian (falamos.app/#uk); the switch keeps the choice in the address.
-    function show(next) {
-      lang = next;
-      root.lang = next;
-      root.classList.toggle('uk', next === 'uk');
-      document.title = meta[next].title;
-      document.querySelectorAll('.lang a').forEach(function (a) { a.setAttribute('aria-current', String(a.dataset.lang === next)); });
-      document.getElementById('privacy-link').setAttribute('href', 'privacy/#' + next);
-      labelToggle();
-    }
-    document.querySelectorAll('.lang a').forEach(function (a) {
-      a.addEventListener('click', function (e) {
-        e.preventDefault();
-        show(a.dataset.lang);
-        history.replaceState(null, '', '#' + a.dataset.lang);
-      });
-    });
-    show(location.hash === '#uk' ? 'uk' : 'en');
-    window.addEventListener('hashchange', function () {
-      if (location.hash === '#uk' || location.hash === '#en') { show(location.hash.slice(1)); }
-    });
+    labelToggle();
 
     // The tram rides only when motion is welcome, and only once it is near; it can always be stopped.
     toggle.hidden = false;

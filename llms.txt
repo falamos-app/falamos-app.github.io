@@ -1,0 +1,23 @@
+# Falamos
+
+> Falamos is a mobile app (iPhone and Android, coming soon to the App Store and Google Play) for learning European Portuguese (pt-PT) for people who are moving to Portugal or already live there. Explanations are in English or Ukrainian.
+
+Key facts:
+
+- Only European Portuguese, as spoken in Portugal (chamo-me, autocarro, telemóvel), never Brazilian Portuguese.
+- The course is organised as lines of a tram map around real relocation situations: the tax office (Finanças) and the NIF, renting a home, the city, health and the SNS, the bank and the NISS, work and school.
+- Short daily sessions of about five minutes, with voiced dialogues, exercises and spaced repetition.
+- Photo of real text: photograph a letter, contract or sign; the text is recognised on the phone and only the text is sent to be explained in the learner's language; chosen words join the review.
+- A path to level A2, the level needed for permanent residence and citizenship in Portugal, with practice tests in the CIPLE format (reading, listening, writing, speaking). The first release covers all of A1; A2 comes next.
+- Works without registration; optional sign-in with Apple or Google keeps progress across phones.
+- Made by a solo developer who is moving to Portugal and is the first user of the app.
+
+## Pages
+
+- [Home (English)](https://falamos.app/): what Falamos is, the course lines and common questions
+- [Home (Ukrainian)](https://falamos.app/uk/): the same page in Ukrainian
+- [Privacy policy](https://falamos.app/privacy/): what stays on the phone and what is sent, in English and Ukrainian
+
+## Contact
+
+- Support: support@falamos.app

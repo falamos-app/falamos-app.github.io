@@ -1,4 +1,6 @@
+# Search engines and AI assistants are welcome to read and cite the site.
 User-agent: *
 Allow: /
+Disallow: /build/
 
 Sitemap: https://falamos.app/sitemap.xml

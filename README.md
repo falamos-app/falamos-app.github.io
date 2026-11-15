@@ -1,5 +1,10 @@
 # Falamos — site
 
+The home page is generated: edit `build/home.tpl.html` (both languages, `data-l="en"` / `data-l="uk"`), then run
+`python3 build/make.py`, which writes `index.html` (English, `/`) and `uk/index.html` (Ukrainian, `/uk/`) with their own
+titles, hreflang, Open Graph and structured data (the FAQ markup is read from the page's questions). Commit the template
+and both generated pages together. `llms.txt`, `robots.txt` and `sitemap.xml` are written by hand.
+
 Static site on GitHub Pages: https://falamos-app.github.io
 
 `config.json` is read by every installed app (at launch and on return, at most every 30 minutes):

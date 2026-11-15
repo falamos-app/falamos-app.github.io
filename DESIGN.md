@@ -184,7 +184,7 @@ Falamos is a stop on a Lisbon or Porto tram line, and the lines leaving it are t
 
 Density is low and the type is loud. Portuguese words are set large in Bricolage Grotesque because the language is the product. Interface copy is set in Geologica, plain and warm. Depth is physical, never atmospheric: boards sit on the ground and throw a hard, unblurred shadow down and to the right. The night-tram video is the only moving part of the system. Everything else stays still apart from hover feedback.
 
-The page speaks one language at a time, English by default and Ukrainian at `#uk`. Both versions are in the markup, so a switch never reflows the layout into a different design.
+The page speaks one language at a time: English at `/`, Ukrainian at `/uk/`. Both are generated from one bilingual template (`build/home.tpl.html`, `python3 build/make.py`), so the two pages are always the same design.
 
 **Key Characteristics:**
 - Tram-yellow day ground, warm-graphite night ground, chosen by `prefers-color-scheme`.
@@ -248,7 +248,7 @@ A two-theme palette of tram yellow and ink, with a set of metro line colours use
 ### Named Rules
 **The Bricolage-Is-Portuguese Rule.** Bricolage is applied only through `[lang="pt"]`. It has no Cyrillic, so no English or Ukrainian string is ever set in it, however display-sized.
 
-**The One Language at a Time Rule.** Every interface string ships as an `en`/`uk` pair (`data-l`). English shows by default, `html.uk` swaps to Ukrainian, and Portuguese is shared by both.
+**The One Language at a Time Rule.** Every interface string in the template is an `en`/`uk` pair (`data-l`); the generator keeps one language per page, and Portuguese is shared by both. Never edit `index.html` or `uk/index.html` by hand.
 
 ## Layout
 
@@ -280,7 +280,7 @@ Corners are generously rounded but never pill-soft on containers: 22px for the s
 ## Components
 
 ### Stop Sign
-An ink route board with yellow lettering (at night, a yellow board with graphite lettering). It holds the app mark, the language switch, «Falamos» in Display, the tagline, a short description in sign-muted, and two store plates. It uses 22px corners, 30px padding and the 8px street-furniture shadow. The terminus is the same sign hung on the pole at the end of the line: a header strip («Fim da linha» in Bricolage, «End of the line» / «Кінцева» in the label role) over «Falamos!», the note and the store plates; the footer sits on the ground below.
+An ink route board with yellow lettering (at night, a yellow board with graphite lettering). It holds the app mark, the language switch, «Falamos» in Display, the tagline, a short description in sign-muted, and the two official store badges (App Store, Google Play), each with a «Coming soon» chip until the app is live. It uses 22px corners, 30px padding and the 8px street-furniture shadow. The terminus is the same sign hung on the pole at the end of the line: a header strip («Fim da linha» in Bricolage, «End of the line» / «Кінцева» in the label role) over «Falamos!», the note and the store badges; the footer sits on the ground below.
 
 ### Departures Board
 A white board with a 2px edge, 22px corners and the 8px shadow. The header is ink with yellow lettering: a 15px uppercase Geologica label on the left and «Português de Portugal» in Bricolage on the right. Each row is a link: a line square, the destination in Bricolage, the worry in muted Geologica, and an arrow. Rows are divided by 2px rules. On hover a row fills with hover-cream and the arrow slides 5px right (0.25s, `cubic-bezier(.2,.8,.2,1)`). Focus draws the global 3px ink outline inset by 5px. A paper-coloured foot lists the other lines.
@@ -292,7 +292,7 @@ A square with 14–16px corners, a metro-colour fill, and a white Bricolage 800 
 Outlined in the sign's line colour, with 16px corners, a 22px phone icon, the store name, and a «Coming soon» pill label pushed to the right. It is not a link until the real store URL exists.
 
 ### Language Switch
-A pill outline holding two 14px bold pills, EN and UA. The current one is filled with the sign text colour. It writes `#en`/`#uk` to the address with `replaceState`.
+A pill outline holding two 14px bold pills, EN and UA. The current one is filled with the sign text colour. Each pill is a link to the other language's page (`/`, `/uk/`) with hreflang; the current one carries `aria-current="page"`.
 
 ### Card
 A white board with a 2px edge, 20px corners and a 6px shadow. It holds the demos: the explanation of a letter, the line strip, and the practice test.

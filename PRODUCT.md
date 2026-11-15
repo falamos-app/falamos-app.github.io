@@ -41,10 +41,12 @@ support). Visitors are mostly on phones.
 
 ## Capabilities and Constraints
 
-- Interface languages: English and Ukrainian. The site defaults to English and switches to Ukrainian by `#uk`, the same
-  way `privacy/` does.
-- The app is not in the stores yet: store buttons read «coming soon» for both App Store and Google Play until the real
-  links exist. The page must not claim the app is available.
+- Interface languages: English and Ukrainian. The home page is two indexable pages, English at `/` and Ukrainian at
+  `/uk/`, generated from one bilingual template (`build/home.tpl.html` → `python3 build/make.py`); old `/#uk` links
+  redirect to `/uk/`. `privacy/` still switches by `#uk`.
+- The app is not in the stores yet. The official App Store and Google Play badges are shown (author's decision
+  2026-11-15) without links and with a «Coming soon» chip beside each; add the store links on release. The page must
+  not claim the app is available.
 - No prices or free-tier limits on the site (decision 2026-11-15): prices are still working hypotheses.
 - `privacy/` and `config.json` must stay untouched by design work.
 - Contact: support@falamos.app.

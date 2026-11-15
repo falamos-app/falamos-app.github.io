@@ -1,0 +1,623 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-15T19:38:33+00:00",
+  "title": "Design System: Falamos",
+  "extensions": {
+    "colorMeta": {
+      "tram-yellow": {
+        "role": "primary",
+        "displayName": "Tram Yellow",
+        "canonical": "#FFCC1A",
+        "tonalRamp": [
+          "#170700",
+          "#382000",
+          "#5D3B00",
+          "#845900",
+          "#A77B00",
+          "#C5A133",
+          "#E3C77A",
+          "#FFEDB7"
+        ]
+      },
+      "tram-yellow-night": {
+        "role": "primary",
+        "displayName": "Night Tram Yellow",
+        "canonical": "#F0C02A",
+        "tonalRamp": [
+          "#160800",
+          "#372000",
+          "#5B3C00",
+          "#825A00",
+          "#A57C00",
+          "#C3A141",
+          "#E1C781",
+          "#FFEDBC"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "canonical": "#111111",
+        "tonalRamp": [
+          "#0B0B0B",
+          "#252525",
+          "#424242",
+          "#616161",
+          "#828282",
+          "#A5A5A5",
+          "#C9C9C9",
+          "#EEEEEE"
+        ]
+      },
+      "ink-muted": {
+        "role": "neutral",
+        "displayName": "Ink Muted",
+        "canonical": "#4D4120",
+        "tonalRamp": [
+          "#0F0B03",
+          "#2B2413",
+          "#4A412A",
+          "#6C6042",
+          "#8D8162",
+          "#AEA48A",
+          "#D1C9B3",
+          "#F4EEDF"
+        ]
+      },
+      "board-white": {
+        "role": "neutral",
+        "displayName": "Board White",
+        "canonical": "#FFFFFF",
+        "tonalRamp": [
+          "#0B0B0B",
+          "#252525",
+          "#424242",
+          "#616161",
+          "#828282",
+          "#A5A5A5",
+          "#C9C9C9",
+          "#EEEEEE"
+        ]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Warm Paper",
+        "canonical": "#FCF1D4",
+        "tonalRamp": [
+          "#0E0B04",
+          "#292518",
+          "#484130",
+          "#69614A",
+          "#8B826A",
+          "#ACA590",
+          "#CFC9B9",
+          "#F3EEE2"
+        ]
+      },
+      "rail": {
+        "role": "neutral",
+        "displayName": "Rail Cream",
+        "canonical": "#E2D8B6",
+        "tonalRamp": [
+          "#0E0B03",
+          "#292516",
+          "#48422D",
+          "#696145",
+          "#8B8266",
+          "#ACA58D",
+          "#CFC9B6",
+          "#F3EFE0"
+        ]
+      },
+      "hover-cream": {
+        "role": "neutral",
+        "displayName": "Hover Cream",
+        "canonical": "#FFF3C4",
+        "tonalRamp": [
+          "#0E0B01",
+          "#2A250F",
+          "#494224",
+          "#6B613B",
+          "#8D825B",
+          "#AEA584",
+          "#D0C9AF",
+          "#F4EFDC"
+        ]
+      },
+      "sign-muted": {
+        "role": "neutral",
+        "displayName": "Sign Muted",
+        "canonical": "#FFE58A",
+        "tonalRamp": [
+          "#120A00",
+          "#302400",
+          "#514000",
+          "#755F00",
+          "#97812D",
+          "#B7A465",
+          "#D7C998",
+          "#F9EFCB"
+        ]
+      },
+      "highlighter": {
+        "role": "neutral",
+        "displayName": "Highlighter",
+        "canonical": "#FFE27A",
+        "tonalRamp": [
+          "#130A00",
+          "#312300",
+          "#534000",
+          "#775F00",
+          "#998018",
+          "#B9A45C",
+          "#D9C991",
+          "#FAEFC7"
+        ]
+      },
+      "graphite-ground": {
+        "role": "neutral",
+        "displayName": "Graphite Ground",
+        "canonical": "#1E1D1A",
+        "tonalRamp": [
+          "#0B0B0A",
+          "#262523",
+          "#43423F",
+          "#62615E",
+          "#83827F",
+          "#A6A5A2",
+          "#CAC9C7",
+          "#EFEEED"
+        ]
+      },
+      "graphite-board": {
+        "role": "neutral",
+        "displayName": "Graphite Board",
+        "canonical": "#2A2925",
+        "tonalRamp": [
+          "#0B0B0A",
+          "#262523",
+          "#43423F",
+          "#62615D",
+          "#83827E",
+          "#A6A5A1",
+          "#CAC9C6",
+          "#EFEEEC"
+        ]
+      },
+      "graphite-paper": {
+        "role": "neutral",
+        "displayName": "Graphite Paper",
+        "canonical": "#24231F",
+        "tonalRamp": [
+          "#0B0B0A",
+          "#262523",
+          "#43423F",
+          "#62615D",
+          "#83827E",
+          "#A6A5A1",
+          "#CAC9C6",
+          "#EFEEEC"
+        ]
+      },
+      "graphite-ink": {
+        "role": "neutral",
+        "displayName": "Graphite Ink",
+        "canonical": "#EDEAE3",
+        "tonalRamp": [
+          "#0C0B09",
+          "#262522",
+          "#44423E",
+          "#63615B",
+          "#85827C",
+          "#A7A5A0",
+          "#CBC9C5",
+          "#EFEEEB"
+        ]
+      },
+      "graphite-muted": {
+        "role": "neutral",
+        "displayName": "Graphite Muted",
+        "canonical": "#A9A59C",
+        "tonalRamp": [
+          "#0C0B09",
+          "#272521",
+          "#44423C",
+          "#646159",
+          "#85827A",
+          "#A8A59E",
+          "#CBC9C3",
+          "#F0EEEA"
+        ]
+      },
+      "graphite-line": {
+        "role": "neutral",
+        "displayName": "Graphite Line",
+        "canonical": "#45423C",
+        "tonalRamp": [
+          "#0C0B09",
+          "#262522",
+          "#44423D",
+          "#64615B",
+          "#85827C",
+          "#A7A59F",
+          "#CBC9C5",
+          "#F0EEEB"
+        ]
+      },
+      "graphite-rail": {
+        "role": "neutral",
+        "displayName": "Graphite Rail",
+        "canonical": "#3A3833",
+        "tonalRamp": [
+          "#0C0B09",
+          "#262522",
+          "#43423E",
+          "#63615C",
+          "#84827D",
+          "#A7A5A0",
+          "#CAC9C5",
+          "#EFEEEC"
+        ]
+      },
+      "graphite-hover": {
+        "role": "neutral",
+        "displayName": "Graphite Hover",
+        "canonical": "#3A3420",
+        "tonalRamp": [
+          "#0D0B05",
+          "#28251A",
+          "#464233",
+          "#67614D",
+          "#88826E",
+          "#AAA594",
+          "#CDC9BB",
+          "#F1EEE4"
+        ]
+      },
+      "graphite-sign-ink": {
+        "role": "neutral",
+        "displayName": "Graphite Sign Ink",
+        "canonical": "#141311",
+        "tonalRamp": [
+          "#0B0B0A",
+          "#262524",
+          "#434240",
+          "#62615F",
+          "#838280",
+          "#A6A5A3",
+          "#CAC9C7",
+          "#EFEEED"
+        ]
+      },
+      "graphite-sign-muted": {
+        "role": "neutral",
+        "displayName": "Graphite Sign Muted",
+        "canonical": "#4E400C",
+        "tonalRamp": [
+          "#0F0B00",
+          "#2C240C",
+          "#4B411F",
+          "#6E6035",
+          "#8F8255",
+          "#B0A580",
+          "#D2C9AC",
+          "#F5EFD9"
+        ]
+      },
+      "shadow-night": {
+        "role": "neutral",
+        "displayName": "Night Shadow",
+        "canonical": "#0A0A09",
+        "tonalRamp": [
+          "#0B0B0B",
+          "#252524",
+          "#424241",
+          "#616160",
+          "#828281",
+          "#A5A5A4",
+          "#C9C9C8",
+          "#EEEEEE"
+        ]
+      },
+      "night-sky": {
+        "role": "neutral",
+        "displayName": "Night Sky",
+        "canonical": "#0C0B0A",
+        "tonalRamp": [
+          "#0B0B0B",
+          "#262524",
+          "#434241",
+          "#626160",
+          "#838281",
+          "#A6A5A4",
+          "#CAC9C8",
+          "#EFEEEE"
+        ]
+      },
+      "line-1-blue": {
+        "role": "secondary",
+        "displayName": "Line 1 Blue",
+        "canonical": "#2B63C6",
+        "tonalRamp": [
+          "#000827",
+          "#062153",
+          "#173E83",
+          "#2A5DB6",
+          "#4B80DC",
+          "#78A5F3",
+          "#A5CAFF",
+          "#D4F0FF"
+        ]
+      },
+      "line-2-red": {
+        "role": "secondary",
+        "displayName": "Line 2 Red",
+        "canonical": "#C2381F",
+        "tonalRamp": [
+          "#220000",
+          "#4C0400",
+          "#791806",
+          "#AA2F18",
+          "#D2543D",
+          "#ED836E",
+          "#FFB09E",
+          "#FFDDCF"
+        ]
+      },
+      "line-9-green": {
+        "role": "secondary",
+        "displayName": "Line 9 Green",
+        "canonical": "#17845A",
+        "tonalRamp": [
+          "#001105",
+          "#002F1A",
+          "#005033",
+          "#0F734D",
+          "#3E966E",
+          "#72B694",
+          "#A3D7BB",
+          "#D4F9E4"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "«Falamos» on the stop sign. Portuguese only (Bricolage)."
+      },
+      "display-terminus": {
+        "displayName": "Display Terminus",
+        "purpose": "«Falamos!» at the terminus."
+      },
+      "display-pair": {
+        "displayName": "Display Pair",
+        "purpose": "Struck Brazilian vs kept European word pairs."
+      },
+      "destination": {
+        "displayName": "Destination",
+        "purpose": "A line's Portuguese destination on the departures board."
+      },
+      "phrase": {
+        "displayName": "Phrase",
+        "purpose": "Portuguese dialogue lines, exam questions, options, letter text."
+      },
+      "line-number": {
+        "displayName": "Line Number",
+        "purpose": "Numerals in metro line squares (20–28px by context)."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section and stop titles in the interface language (Geologica)."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Tagline on the sign."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Default interface text; 16px on phones."
+      },
+      "body-lede": {
+        "displayName": "Lede",
+        "purpose": "Section ledes; stop bodies run 18px/1.55."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Uppercase small labels: «Coming soon», «Example», speaker names; board header at 15px."
+      }
+    },
+    "shadows": [
+      {
+        "name": "street-furniture",
+        "value": "8px 8px 0 var(--shadow)",
+        "purpose": "Stop sign and departures board (6px on phones)."
+      },
+      {
+        "name": "card",
+        "value": "6px 6px 0 var(--shadow)",
+        "purpose": "Demo cards and the photographed letter."
+      },
+      {
+        "name": "small",
+        "value": "3px 3px 0 var(--shadow)",
+        "purpose": "Speech bubbles."
+      },
+      {
+        "name": "rail-ring",
+        "value": "0 0 0 2px var(--line)",
+        "purpose": "Line squares on the rail, with a 3px ground-coloured border."
+      }
+    ],
+    "motion": [
+      {
+        "name": "row-hover",
+        "value": "background-color .2s",
+        "purpose": "Board row fill on hover."
+      },
+      {
+        "name": "ride-on",
+        "value": "transform .25s cubic-bezier(.2, .8, .2, 1)",
+        "purpose": "Board arrow slides 5px right on row hover."
+      },
+      {
+        "name": "smooth-scroll",
+        "value": "scroll-behavior: smooth (auto under reduced motion)",
+        "purpose": "Board rows ride down to their stop."
+      },
+      {
+        "name": "night-tram",
+        "value": "muted looping video, starts within 200px of view; poster only under reduced motion",
+        "purpose": "The page's one moving moment, always pausable."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "stack",
+        "value": "960px"
+      },
+      {
+        "name": "phone",
+        "value": "600px"
+      }
+    ],
+    "themes": {
+      "mechanism": "prefers-color-scheme: dark redefines the role variables on :root; no manual toggle.",
+      "source": "language-app/src/theme/colors.ts (lightColors, darkColors, signColors.dark, LINE_COLORS)"
+    },
+    "i18n": {
+      "mechanism": "Every interface string ships as [data-l=\"en\"] / [data-l=\"uk\"]; html.uk swaps; #uk in the address selects Ukrainian; Portuguese is shared and marked lang=\"pt\" (Bricolage)."
+    }
+  },
+  "components": [
+    {
+      "name": "Stop Sign",
+      "kind": "custom",
+      "refersTo": "sign",
+      "description": "Ink route board with yellow lettering: mark, language switch, name, tagline, store plates. Yellow board on graphite at night.",
+      "html": "<div class=\"ds-sign\"><p class=\"ds-sign-name\" lang=\"pt\">Falamos</p><p class=\"ds-sign-tag\">European Portuguese for people who moved to Portugal.</p><p class=\"ds-sign-about\">Five minutes a day, lessons built on real life here.</p></div>",
+      "css": ":host{--ground:#FFCC1A;--ink:#111111;--muted:#4D4120;--board:#FFFFFF;--paper:#FCF1D4;--line:#111111;--shadow:#111111;--hover:#FFF3C4;--sign:#111111;--sign-text:#FFCC1A;--sign-muted:#FFE58A;--sign-line:#FFCC1A;--chip:#FFCC1A;--on-chip:#111111;--ui:\"Geologica\",system-ui,sans-serif;--pt:\"Bricolage\",\"Geologica\",system-ui,sans-serif} .ds-sign{background:var(--sign);color:var(--sign-text);border-radius:22px;padding:30px 30px 28px;box-shadow:8px 8px 0 var(--shadow);max-width:400px;font-family:var(--ui)} .ds-sign-name{margin:0 0 14px;font:800 64px/.95 var(--pt);letter-spacing:-.03em} .ds-sign-tag{margin:0;font:700 22px/1.3 var(--ui)} .ds-sign-about{margin:12px 0 0;font:400 16px/1.5 var(--ui);color:var(--sign-muted)}"
+    },
+    {
+      "name": "Departures Board",
+      "kind": "card",
+      "refersTo": "departures-board",
+      "description": "White board with ink header; each row is a link to a line's stop: line square, Portuguese destination, worry, arrow.",
+      "html": "<section class=\"ds-board\"><div class=\"ds-board-head\"><span>Lines from this stop</span><span lang=\"pt\">Português de Portugal</span></div><a class=\"ds-row\" href=\"#\"><span class=\"ds-no\" style=\"background:#2B63C6\">1</span><span class=\"ds-dest\" lang=\"pt\">Finanças e NIF</span><span class=\"ds-worry\">A letter from the tax office. What it says and what to do.</span><svg class=\"ds-go\" viewBox=\"0 0 24 24\"><path d=\"M5 12h13M13 6l6 6-6 6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></a><a class=\"ds-row\" href=\"#\"><span class=\"ds-no ds-a2\">A2</span><span class=\"ds-dest\" lang=\"pt\">Exame CIPLE</span><span class=\"ds-worry\">The road to A2 for residence or citizenship.</span><svg class=\"ds-go\" viewBox=\"0 0 24 24\"><path d=\"M5 12h13M13 6l6 6-6 6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></a></section>",
+      "css": ":host{--ground:#FFCC1A;--ink:#111111;--muted:#4D4120;--board:#FFFFFF;--paper:#FCF1D4;--line:#111111;--shadow:#111111;--hover:#FFF3C4;--sign:#111111;--sign-text:#FFCC1A;--sign-muted:#FFE58A;--sign-line:#FFCC1A;--chip:#FFCC1A;--on-chip:#111111;--ui:\"Geologica\",system-ui,sans-serif;--pt:\"Bricolage\",\"Geologica\",system-ui,sans-serif} .ds-board{background:var(--board);border:2px solid var(--line);border-radius:22px;box-shadow:8px 8px 0 var(--shadow);overflow:hidden;font-family:var(--ui);color:var(--ink)} .ds-board-head{display:flex;justify-content:space-between;gap:16px;background:#111111;color:#FFCC1A;padding:16px 26px;font:700 15px/1.2 var(--ui);letter-spacing:.06em;text-transform:uppercase} .ds-board-head [lang=pt]{font:700 16px/1.2 var(--pt);letter-spacing:0;text-transform:none} .ds-row{display:grid;grid-template-columns:64px minmax(0,1fr) 28px;gap:4px 22px;align-items:center;padding:22px 26px;border-top:2px solid var(--line);text-decoration:none;color:inherit;transition:background-color .2s} .ds-row:first-of-type{border-top:0} .ds-row:hover{background:var(--hover)} .ds-row:focus-visible{outline:3px solid var(--ink);outline-offset:-5px} .ds-no{width:60px;height:60px;border-radius:14px;display:grid;place-items:center;color:#fff;font:800 26px/1 var(--pt);grid-row:span 2} .ds-a2{background:#111111;color:#FFCC1A} .ds-dest{font:800 32px/1.05 var(--pt);letter-spacing:-.02em} .ds-worry{font:400 17px/1.4 var(--ui);color:var(--muted);grid-column:2} .ds-go{grid-row:1/span 2;grid-column:3;width:28px;height:28px;transition:transform .25s cubic-bezier(.2,.8,.2,1)} .ds-row:hover .ds-go{transform:translateX(5px)}"
+    },
+    {
+      "name": "Store Plate",
+      "kind": "button",
+      "refersTo": "store-plate",
+      "description": "Outlined store plate on the sign with a «Coming soon» pill; becomes a link only when the real store URL exists.",
+      "html": "<div class=\"ds-sign-bg\"><div class=\"ds-plate\"><svg viewBox=\"0 0 24 24\"><rect x=\"6\" y=\"2.5\" width=\"12\" height=\"19\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\"/><path d=\"M10.5 18.5h3\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\"/></svg>App Store<span class=\"ds-soon\">Coming soon</span></div></div>",
+      "css": ":host{--ground:#FFCC1A;--ink:#111111;--muted:#4D4120;--board:#FFFFFF;--paper:#FCF1D4;--line:#111111;--shadow:#111111;--hover:#FFF3C4;--sign:#111111;--sign-text:#FFCC1A;--sign-muted:#FFE58A;--sign-line:#FFCC1A;--chip:#FFCC1A;--on-chip:#111111;--ui:\"Geologica\",system-ui,sans-serif;--pt:\"Bricolage\",\"Geologica\",system-ui,sans-serif} .ds-sign-bg{background:var(--sign);color:var(--sign-text);padding:20px;border-radius:22px;max-width:360px} .ds-plate{display:flex;align-items:center;gap:12px;border:2px solid var(--sign-line);border-radius:16px;padding:11px 14px;font:700 17px/1.2 var(--ui)} .ds-plate svg{width:22px;height:22px;flex:none} .ds-soon{margin-left:auto;font:700 12px/1 var(--ui);letter-spacing:.06em;text-transform:uppercase;border:2px solid var(--sign-line);border-radius:999px;padding:5px 9px}"
+    },
+    {
+      "name": "Language Switch",
+      "kind": "nav",
+      "refersTo": "language-switch-active",
+      "description": "EN / UA pill switch on the sign; writes #en or #uk to the address.",
+      "html": "<div class=\"ds-sign-bg\"><nav class=\"ds-lang\"><a href=\"#en\" aria-current=\"true\">EN</a><a href=\"#uk\">UA</a></nav></div>",
+      "css": ":host{--ground:#FFCC1A;--ink:#111111;--muted:#4D4120;--board:#FFFFFF;--paper:#FCF1D4;--line:#111111;--shadow:#111111;--hover:#FFF3C4;--sign:#111111;--sign-text:#FFCC1A;--sign-muted:#FFE58A;--sign-line:#FFCC1A;--chip:#FFCC1A;--on-chip:#111111;--ui:\"Geologica\",system-ui,sans-serif;--pt:\"Bricolage\",\"Geologica\",system-ui,sans-serif} .ds-sign-bg{background:var(--sign);padding:20px;border-radius:22px;display:inline-block} .ds-lang{display:inline-flex;border:2px solid var(--sign-line);border-radius:999px;padding:3px;gap:2px} .ds-lang a{padding:5px 12px;border-radius:999px;text-decoration:none;font:700 14px/1.2 var(--ui);color:var(--sign-text)} .ds-lang a[aria-current=true]{background:var(--sign-text);color:var(--sign)} .ds-lang a:focus-visible{outline:3px solid var(--sign-text);outline-offset:3px}"
+    },
+    {
+      "name": "Card with Word Chips",
+      "kind": "card",
+      "refersTo": "card",
+      "description": "White card, 2px edge, 6px hard shadow; word chips carry a Portuguese word and its gloss.",
+      "html": "<div class=\"ds-card\"><p class=\"ds-summary\">A letter from the tax office: file your IRS return by 30 June.</p><ul class=\"ds-words\"><li class=\"ds-word\"><b lang=\"pt\">prazo</b><span>deadline</span></li><li class=\"ds-word\"><b lang=\"pt\">coima</b><span>fine</span></li></ul></div>",
+      "css": ":host{--ground:#FFCC1A;--ink:#111111;--muted:#4D4120;--board:#FFFFFF;--paper:#FCF1D4;--line:#111111;--shadow:#111111;--hover:#FFF3C4;--sign:#111111;--sign-text:#FFCC1A;--sign-muted:#FFE58A;--sign-line:#FFCC1A;--chip:#FFCC1A;--on-chip:#111111;--ui:\"Geologica\",system-ui,sans-serif;--pt:\"Bricolage\",\"Geologica\",system-ui,sans-serif} .ds-card{background:var(--board);color:var(--ink);border:2px solid var(--line);border-radius:20px;box-shadow:6px 6px 0 var(--shadow);padding:22px 24px;max-width:470px;font-family:var(--ui)} .ds-summary{margin:0;font:600 18px/1.45 var(--ui)} .ds-words{display:flex;flex-wrap:wrap;gap:10px;margin:16px 0 0;padding:0;list-style:none} .ds-word{display:inline-flex;align-items:baseline;gap:8px;border:2px solid var(--line);border-radius:999px;padding:7px 14px;background:var(--ground)} .ds-word b{font:800 19px/1.1 var(--pt)} .ds-word span{font:400 14px/1.1 var(--ui)}"
+    },
+    {
+      "name": "Tag Chip",
+      "kind": "chip",
+      "refersTo": "tag-chip",
+      "description": "Uppercase label marking demo content as an example.",
+      "html": "<span class=\"ds-tagchip\">Example</span>",
+      "css": ":host{--ground:#FFCC1A;--ink:#111111;--muted:#4D4120;--board:#FFFFFF;--paper:#FCF1D4;--line:#111111;--shadow:#111111;--hover:#FFF3C4;--sign:#111111;--sign-text:#FFCC1A;--sign-muted:#FFE58A;--sign-line:#FFCC1A;--chip:#FFCC1A;--on-chip:#111111;--ui:\"Geologica\",system-ui,sans-serif;--pt:\"Bricolage\",\"Geologica\",system-ui,sans-serif} .ds-tagchip{display:inline-block;font:700 12px/1 var(--ui);letter-spacing:.06em;text-transform:uppercase;background:var(--chip);color:var(--on-chip);border:2px solid var(--line);border-radius:6px;padding:5px 8px}"
+    },
+    {
+      "name": "Speech Bubbles",
+      "kind": "custom",
+      "refersTo": "bubble-them",
+      "description": "Dialogue: white bubble for the other speaker, ink bubble for the learner; Portuguese in Bricolage, translation in Geologica.",
+      "html": "<div class=\"ds-talk\"><p class=\"ds-bubble\"><span lang=\"pt\">Qual é o seu número de utente?</span><span class=\"ds-tr\">What's your patient number?</span></p><p class=\"ds-bubble ds-me\"><span lang=\"pt\">Desculpe, não percebo.</span><span class=\"ds-tr\">Sorry, I don't understand.</span></p></div>",
+      "css": ":host{--ground:#FFCC1A;--ink:#111111;--muted:#4D4120;--board:#FFFFFF;--paper:#FCF1D4;--line:#111111;--shadow:#111111;--hover:#FFF3C4;--sign:#111111;--sign-text:#FFCC1A;--sign-muted:#FFE58A;--sign-line:#FFCC1A;--chip:#FFCC1A;--on-chip:#111111;--ui:\"Geologica\",system-ui,sans-serif;--pt:\"Bricolage\",\"Geologica\",system-ui,sans-serif} .ds-talk{display:grid;gap:14px;max-width:420px} .ds-bubble{margin:0;max-width:92%;border:2px solid var(--line);border-radius:18px;border-bottom-left-radius:6px;padding:12px 16px;background:var(--board);color:var(--ink);box-shadow:3px 3px 0 var(--shadow)} .ds-bubble [lang=pt]{display:block;font:700 20px/1.3 var(--pt)} .ds-tr{display:block;font:400 15px/1.4 var(--ui);color:var(--muted);margin-top:4px} .ds-me{background:#111111;color:#fff;border-radius:18px;border-bottom-right-radius:6px;margin-left:auto} .ds-me .ds-tr{color:#FFE58A}"
+    },
+    {
+      "name": "Answer Options",
+      "kind": "custom",
+      "refersTo": "option",
+      "description": "CIPLE-format options; the right answer turns ink with yellow.",
+      "html": "<ol class=\"ds-options\" lang=\"pt\"><li><i>A</i>ao sábado</li><li class=\"ds-right\"><i>B</i>ao domingo</li><li><i>C</i>à segunda-feira</li></ol>",
+      "css": ":host{--ground:#FFCC1A;--ink:#111111;--muted:#4D4120;--board:#FFFFFF;--paper:#FCF1D4;--line:#111111;--shadow:#111111;--hover:#FFF3C4;--sign:#111111;--sign-text:#FFCC1A;--sign-muted:#FFE58A;--sign-line:#FFCC1A;--chip:#FFCC1A;--on-chip:#111111;--ui:\"Geologica\",system-ui,sans-serif;--pt:\"Bricolage\",\"Geologica\",system-ui,sans-serif} .ds-options{display:grid;gap:10px;margin:0;padding:0;list-style:none;max-width:360px} .ds-options li{display:flex;align-items:center;gap:12px;border:2px solid var(--line);border-radius:14px;padding:10px 14px;font:700 18px/1.2 var(--pt);background:var(--board);color:var(--ink)} .ds-options i{font:700 14px/1 var(--ui);font-style:normal;width:26px;height:26px;border-radius:8px;border:2px solid var(--line);display:grid;place-items:center;flex:none} .ds-options li.ds-right{background:#111111;color:#FFCC1A;border-color:#111111} .ds-options li.ds-right i{border-color:#FFCC1A}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Tram Stop",
+    "overview": "Falamos is a stop on a Lisbon or Porto tram line, and the lines leaving it are the newcomer's real worries: Finanças, renting, the doctor and the A2 exam. Every surface is a piece of street furniture. There is an ink route sign with yellow lettering, a white departures board with a 2px ink edge and a hard offset shadow, square metro line numbers, and a rail that runs down the page and links the stops. By day the ground is tram yellow. By night it is warm graphite, and yellow moves onto the one thing that should glow, the sign.\n\nDensity is low and the type is loud. Portuguese words are set large in Bricolage Grotesque because the language is the product. Interface copy is set in Geologica, plain and warm. Depth is physical, never atmospheric: boards sit on the ground and throw a hard, unblurred shadow down and to the right. The night-tram video is the only moving part of the system. Everything else stays still apart from hover feedback.\n\nThe page speaks one language at a time, English by default and Ukrainian at `#uk`. Both versions are in the markup, so a switch never reflows the layout into a different design.",
+    "keyCharacteristics": [
+      "Tram-yellow day ground, warm-graphite night ground, chosen by `prefers-color-scheme`.",
+      "Every edge is 2px, every shadow is a hard offset with zero blur.",
+      "Square line numbers in metro colours stand for the course's lines.",
+      "Bricolage only on Portuguese text, Geologica for everything in the interface language.",
+      "One rail on the left axis (the pole in the header, then the line through the stops).",
+      "Bilingual EN/UK with both strings in the markup and `[data-l]` switching."
+    ],
+    "rules": [
+      {
+        "name": "The Yellow-on-Ink Rule",
+        "body": "Tram yellow is a ground or a fill. As text it appears only on ink by day (or on night graphite). It is never text on white or on the yellow ground.",
+        "section": "colors"
+      },
+      {
+        "name": "The Lines Are Identity Rule",
+        "body": "Metro colours mark a course line and nothing else. They are never a decorative accent, a button, or a section background.",
+        "section": "colors"
+      },
+      {
+        "name": "The Mirror Rule",
+        "body": "Colour values are the app's roles. A new colour enters the app's `colors.ts` first, or not at all.",
+        "section": "colors"
+      },
+      {
+        "name": "The Bricolage-Is-Portuguese Rule",
+        "body": "Bricolage is applied only through `[lang=\"pt\"]`. It has no Cyrillic, so no English or Ukrainian string is ever set in it, however display-sized.",
+        "section": "typography"
+      },
+      {
+        "name": "The One Language at a Time Rule",
+        "body": "Every interface string ships as an `en`/`uk` pair (`data-l`). English shows by default, `html.uk` swaps to Ukrainian, and Portuguese is shared by both.",
+        "section": "typography"
+      },
+      {
+        "name": "The One Axis Rule",
+        "body": "The pole and the rail share the left axis, so the reader always rides the same line down the page.",
+        "section": "layout"
+      },
+      {
+        "name": "The Hard Shadow Rule",
+        "body": "Shadows have zero blur and come in three steps (8, 6 and 3). They are the world's material, and the app uses the same device for cards and controls.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** read colours from the role variables on `:root` and add a night value for every new role in the `prefers-color-scheme: dark` block.",
+      "**Do** draw every edge at 2px and every shadow as a hard offset (8, 6 or 3px, zero blur).",
+      "**Do** set Portuguese text with `lang=\"pt\"` so it takes Bricolage, and give every interface string an `en` and a `uk` version.",
+      "**Do** keep metro colours for line numbers and line rails only, with white numerals.",
+      "**Do** mark demo content with the «Example» tag chip.",
+      "**Do** keep the tram video the only moving element, honour reduced motion, and give it a pause control.",
+      "**Do** change a colour role in the app's theme first, then mirror it here and in `index.html`."
+    ],
+    "donts": [
+      "**Don't** set English or Ukrainian text in Bricolage. It has no Cyrillic.",
+      "**Don't** put yellow text on white or on the yellow ground.",
+      "**Don't** blur a shadow, add gradients or glass, or invent a fourth shadow step.",
+      "**Don't** show store links, prices, ratings or download counts until they are real. Plates stay «Coming soon».",
+      "**Don't** animate whole words on the board. A board-flip was tried and dropped because the tilt read as a glitch.",
+      "**Don't** use a metro line colour as a decorative accent or a call to action."
+    ]
+  }
+}

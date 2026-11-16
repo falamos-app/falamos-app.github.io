@@ -1,7 +1,8 @@
 {
   "ios": {
     "min": "1.0.0",
-    "recommended": "1.0.0"
+    "recommended": "1.0.0",
+    "storeUrl": "https://apps.apple.com/app/id6826639944"
   },
   "android": {
     "min": "1.0.0",

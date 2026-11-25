@@ -280,7 +280,7 @@ Corners are generously rounded but never pill-soft on containers: 22px for the s
 ## Components
 
 ### Stop Sign
-An ink route board with yellow lettering (at night, a yellow board with graphite lettering). It holds the app mark, the language switch, «Falamos» in Display, the tagline, a short description in sign-muted, and the two official store badges (App Store, Google Play), each with a «Coming soon» chip until the app is live. It uses 22px corners, 30px padding and the 8px street-furniture shadow. The terminus is the same sign hung on the pole at the end of the line: a header strip («Fim da linha» in Bricolage, «End of the line» / «Кінцева» in the label role) over «Falamos!», the note and the store badges; the footer sits on the ground below.
+An ink route board with yellow lettering (at night, a yellow board with graphite lettering). It holds the app mark, the language switch, «Falamos» in Display, the tagline, a short description in sign-muted, and the two official store badges (App Store, Google Play), a link once that store is live and with a «Coming soon» chip until then (App Store live, Google Play soon). It uses 22px corners, 30px padding and the 8px street-furniture shadow. The terminus is the same sign hung on the pole at the end of the line: a header strip («Fim da linha» in Bricolage, «End of the line» / «Кінцева» in the label role) over «Falamos!», the note and the store badges; the footer sits on the ground below.
 
 ### Departures Board
 A white board with a 2px edge, 22px corners and the 8px shadow. The header is ink with yellow lettering: a 15px uppercase Geologica label on the left and «Português de Portugal» in Bricolage on the right. Each row is a link: a line square, the destination in Bricolage, the worry in muted Geologica, and an arrow. Rows are divided by 2px rules. On hover a row fills with hover-cream and the arrow slides 5px right (0.25s, `cubic-bezier(.2,.8,.2,1)`). Focus draws the global 3px ink outline inset by 5px. A paper-coloured foot lists the other lines.
@@ -328,6 +328,6 @@ A full-width video on night-sky, bordered top and bottom by 2px. Its caption is 
 - **Don't** set English or Ukrainian text in Bricolage. It has no Cyrillic.
 - **Don't** put yellow text on white or on the yellow ground.
 - **Don't** blur a shadow, add gradients or glass, or invent a fourth shadow step.
-- **Don't** show store links, prices, ratings or download counts until they are real. Plates stay «Coming soon».
+- **Don't** show store links, prices, ratings or download counts until they are real. A store that is not live stays «Coming soon».
 - **Don't** animate whole words on the board. A board-flip was tried and dropped because the tilt read as a glitch.
 - **Don't** use a metro line colour as a decorative accent or a call to action.

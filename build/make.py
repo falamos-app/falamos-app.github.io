@@ -21,8 +21,8 @@ PAGES = {
         'out': ROOT / 'index.html',
         'title': 'Falamos — European Portuguese for people who moved',
         'description': 'Falamos is an app for learning European Portuguese (pt-PT) for people who moved to '
-                       'Portugal: letters from Finanças, renting, the doctor and the A2 exam. Coming to the '
-                       'App Store and Google Play.',
+                       'Portugal: letters from Finanças, renting, the doctor and the A2 exam. On the App '
+                       'Store, soon on Google Play.',
         'og_description': 'Letters from Finanças, renting, the doctor, the A2 exam. Only the Portuguese of Portugal.',
         'og_alt': 'A yellow tram at night between stops signed «Olá!» and «Bom dia!»',
         'locale': 'en_GB',
@@ -33,8 +33,8 @@ PAGES = {
         'out': ROOT / 'uk' / 'index.html',
         'title': 'Falamos — європейська португальська для тих, хто переїхав',
         'description': 'Falamos — застосунок для вивчення європейської португальської (pt-PT) для тих, хто '
-                       'переїхав до Португалії: листи з Finanças, оренда, лікар, іспит A2. Скоро в App Store '
-                       'і Google Play.',
+                       'переїхав до Португалії: листи з Finanças, оренда, лікар, іспит A2. В App Store, '
+                       'скоро в Google Play.',
         'og_description': 'Листи з Finanças, оренда, лікар, іспит A2. Лише португальська Португалії.',
         'og_alt': 'Жовтий трамвай уночі між зупинками «Olá!» і «Bom dia!»',
         'locale': 'uk_UA',
@@ -95,8 +95,9 @@ def head(lang, faq):
         org,
         {'@type': 'WebSite', '@id': url + '#site', 'name': 'Falamos', 'url': url, 'inLanguage': lang,
          'description': p['description'], 'publisher': {'@id': SITE + '/#org'}},
-        # No offers, rating or store URLs until the app is in the stores: nothing here may claim more than the page.
-        {'@type': 'MobileApplication', 'name': 'Falamos', 'operatingSystem': 'iOS, Android',
+        # iOS only until Google Play is live; no offers or rating: nothing here may claim more than the page.
+        {'@type': 'MobileApplication', 'name': 'Falamos', 'operatingSystem': 'iOS',
+         'url': SITE + '/', 'installUrl': 'https://apps.apple.com/app/id6826639944', 'sameAs': 'https://apps.apple.com/app/id6826639944',
          'applicationCategory': 'EducationalApplication', 'inLanguage': ['en', 'uk'],
          'description': p['description'], 'publisher': {'@id': SITE + '/#org'},
          'about': {'@type': 'Language', 'name': 'European Portuguese', 'alternateName': 'pt-PT'}},

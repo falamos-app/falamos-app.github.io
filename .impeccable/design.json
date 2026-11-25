@@ -615,7 +615,7 @@
       "**Don't** set English or Ukrainian text in Bricolage. It has no Cyrillic.",
       "**Don't** put yellow text on white or on the yellow ground.",
       "**Don't** blur a shadow, add gradients or glass, or invent a fourth shadow step.",
-      "**Don't** show store links, prices, ratings or download counts until they are real. Plates stay «Coming soon».",
+      "**Don't** show store links, prices, ratings or download counts until they are real. A store that is not live stays «Coming soon».",
       "**Don't** animate whole words on the board. A board-flip was tried and dropped because the tilt read as a glitch.",
       "**Don't** use a metro line colour as a decorative accent or a call to action."
     ]

@@ -44,9 +44,9 @@ support). Visitors are mostly on phones.
 - Interface languages: English and Ukrainian. The home page is two indexable pages, English at `/` and Ukrainian at
   `/uk/`, generated from one bilingual template (`build/home.tpl.html` → `python3 build/make.py`); old `/#uk` links
   redirect to `/uk/`. `privacy/` still switches by `#uk`.
-- The app is not in the stores yet. The official App Store and Google Play badges are shown (author's decision
-  2026-11-15) without links and with a «Coming soon» chip beside each; add the store links on release. The page must
-  not claim the app is available.
+- The app is in the App Store (iPhone) since 2026-11-24: its official badge links to `https://apps.apple.com/app/id6826639944`
+  (Apple opens the visitor's own storefront). Android is not out: the Google Play badge keeps a «Coming soon» chip and no
+  link, and the page must not claim Android is available.
 - No prices or free-tier limits on the site (decision 2026-11-15): prices are still working hypotheses.
 - `privacy/` and `config.json` must stay untouched by design work.
 - Contact: support@falamos.app.

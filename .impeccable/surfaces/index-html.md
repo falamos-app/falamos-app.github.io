@@ -9,8 +9,8 @@ related_targets: []
 
 Scope: the public home page of the Falamos app. Mode: Persuade.
 Audience: people moving to / just moved to Portugal; Ukrainian speakers first, English-speaking expats too.
-Job: understand in seconds what Falamos is (European Portuguese for real relocation) and know it is coming to App Store
-and Google Play. Action: store plates, «coming soon» until live (no fake links). No prices or free-tier limits.
+Job: understand in seconds what Falamos is (European Portuguese for real relocation) and get it from the App Store
+(Google Play later). Action: App Store badge link; Google Play badge stays «coming soon» until live (no fake links). No prices or free-tier limits.
 Proof/content: store screenshot copy (en/uk), the night-tram header video, the real lines of the course.
 Constraints: EN default, `#uk` switch like privacy/; privacy/ and config.json untouched; no invented reviews or numbers.
 
@@ -29,7 +29,7 @@ answer (the letter explained, the dialogue, pt-PT not Brazilian, a practice item
 store plates again and support.
 
 FIRST VIEWPORT: Desktop: a full-height ink pole on the left carries the stop sign (logo bubble, «Falamos», tagline, two
-«coming soon» store plates, language switch). Right, a departures board ~60% wide: header «Lines from this stop»,
+store badges, Google Play marked «coming soon», language switch). Right, a departures board ~60% wide: header «Lines from this stop»,
 four rows, each a coloured line number, the Portuguese destination in Bricolage and the worry in Geologica. Phone: sign
 on top, board below, the pole as a continuous left rail behind both, on the axis of the stops' rail.
 
